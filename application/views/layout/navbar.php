@@ -14,7 +14,7 @@
                     <a class="nav-link text-uppercase" href="<?php echo site_url('Home'); ?>">Beranda </a>
                 </li>
                 <li class="nav-item dropdown mega-dropdown">
-                    <a class="nav-link text-uppercase dropdown-toggle" href="<?php echo site_url('Produk'); ?>">Produk</a>
+                    <a class="nav-link text-uppercase dropdown-toggle" style="color: #f0d400;" href="<?php echo site_url('Produk'); ?>">Produk</a>
                     <span class="menu_arrow flaticon-down-arrow-1"></span>
                     <ul class="dropdown-menu megamenu_full_screen">
                         <li class="w-100 text-capitalize">
@@ -54,10 +54,10 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown mega-dropdown">
-                    <a class="nav-link text-uppercase" href="<?php echo site_url('Blog/list'); ?>">Blog</a>
+                    <a class="nav-link text-uppercase" style="color: #f0d400;" href="<?php echo site_url('Blog/list'); ?>">Blog</a>
                 </li>
                 <li class="nav-item dropdown mega-dropdown">
-                    <a class="nav-link text-uppercase  dropdown-toggle" href="javascript:void(0);">Lainnya</a>
+                    <a class="nav-link text-uppercase  dropdown-toggle" style="color: #f0d400;" href="javascript:void(0);">Lainnya</a>
                     <span class="menu_arrow flaticon-down-arrow-1"></span>
                     <ul class="dropdown-menu mega-dropdown-menu">
                         <li class="w-100"><a href="#">hayo isi apa</a></li>
@@ -77,13 +77,13 @@
     <ul class="social_icons float-md-right">
         <!-- Social links -->
         <li class="login_icon">
-            <a href="<?php echo site_url('Login'); ?>"><i class="flaticon-social"></i></a>
+            <a style="color: #f0d400;" href="<?php echo site_url('Login'); ?>"><i class="flaticon-social"></i></a>
         </li>
         <li class="wishlist_icon">
-            <a href="<?php echo site_url('Home/wishlist'); ?>"><i class="flaticon-heart"></i></a>
+            <a style="color: #f0d400;" href="<?php echo site_url('Home/wishlist'); ?>"><i class="flaticon-heart"></i></a>
         </li>
         <li class="search_icon">
-            <a href="javascript:void(0);"><i class="flaticon-magnifying-glass"></i></a>
+            <a style="color: #f0d400;" href="javascript:void(0);"><i class="flaticon-magnifying-glass"></i></a>
             <div class="search_form">
                 <form>
                     <input type="text"  placeholder="Cari Produk" class="text-capitalize" />
@@ -92,7 +92,7 @@
             </div>
         </li>
         <li class="cart_icon">
-            <a href="<?php echo site_url('Produk/cart'); ?>">
+            <a style="color: #f0d400;" href="<?php echo site_url('Produk/cart'); ?>">
             <i class="flaticon-shopping-bag"></i>
             <span class="count text-white rounded-circle text-center">2 </span>
             </a>
@@ -102,13 +102,13 @@
 <!-- End Header Social Menu -->
 <!-- Start Header Currency-->
 <div class="header_currency col_4 text-right visible-lg d-none">
-    <a href="<?php echo site_url('Home'); ?>">Bebas isi apa</a>
+    <a style="color: #f0d400;" href="<?php echo site_url('Home'); ?>">Bebas isi apa</a>
 </div>
 <!-- End Header Currency-->
 <div class="header_mobile hidden-lg d-block">
     <!-- Start Header Currency-->
     <div class="header_currency text-right">
-        <a href="<?php echo site_url('Home'); ?>">Bebas isi apa</a>
+        <a style="color: #f0d400;" href="<?php echo site_url('Home'); ?>">Bebas isi apa</a>
     </div>
     <!-- End Header Currency-->
     <!-- Start Header Social Menu -->
@@ -116,13 +116,13 @@
         <ul class="social_icons float-md-right">
             <!-- Social links -->
             <li class="login_icon">
-                <a href="<?php echo site_url('Login'); ?>"><i class="flaticon-social"></i></a>
+                <a style="color: #f0d400;" href="<?php echo site_url('Login'); ?>"><i class="flaticon-social"></i></a>
             </li>
             <li class="wishlist_icon">
-                <a href="<?php echo site_url('Home/wishlist'); ?>"><i class="flaticon-heart"></i></a>
+                <a style="color: #f0d400;" href="<?php echo site_url('Home/wishlist'); ?>"><i class="flaticon-heart"></i></a>
             </li>
             <li class="search_icon">
-                <a href="javascript:void(0);"><i class="flaticon-magnifying-glass"></i></a>
+                <a style="color: #f0d400;" href="javascript:void(0);"><i class="flaticon-magnifying-glass"></i></a>
                 <div class="search_form">
                     <form>
                         <input type="text"  placeholder="Cari Produk" class="text-capitalize" />
@@ -131,7 +131,7 @@
                 </div>
             </li>
             <li class="cart_icon">
-                <a href="<?php echo site_url('Produk/cart'); ?>">
+                <a style="color: #f0d400;" href="<?php echo site_url('Produk/cart'); ?>">
                 <i class="flaticon-shopping-bag"></i>
                 <span class="count text-white rounded-circle text-center">2 </span>
                 </a>
@@ -153,7 +153,7 @@
             </svg>
         </button>
         <!-- Navigation menu container -->
-        <div class="navbar-collapse collapse ">
+        <div class="navbar-collapse collapse">
             <!-- Navigation links -->
             <div class="close_icon"><a class="menu_colse" href="javascript:void(0);"><i class="flaticon-close"></i></a></div>
             <ul class="navbar-nav">

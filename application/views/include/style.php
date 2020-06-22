@@ -11,4 +11,4 @@
 <link href="<?php echo base_url('/inti/css/jquery.countdownTimer.css'); ?>" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url('/inti/css/slick.css'); ?>" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url('/inti/css/comparison.css'); ?>" rel="stylesheet" type="text/css"/>
-<link href="<?php echo base_url('/inti/css/styles.css'); ?>" rel="stylesheet" type="text/css"/>
+<link href="<?php echo base_url('/inti/css/styles1.css'); ?>" rel="stylesheet" type="text/css"/>

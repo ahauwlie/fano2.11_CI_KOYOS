@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Stylesheets -->
         <?php echo $css; ?>
     </head>
-    <body >
+    <body style="background-color:black; text-decoration-color: white;">
         <!-- START Scroll Top Button -->
         <a href="javascript:void(0);" id="back-to-top" class="background-btn back_to_top show">
             <i class="flaticon-left-arrow"></i>
@@ -245,9 +245,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </section>
             <!-- END Summer Collection Section -->
             <!-- START Featured Products -->
-            <section class="padding-top-text-60 featured_section wow fadeIn">
+            <section class="padding-top-text-60 featured_section wow fadeIn" style="background-image: url(<?php echo base_url('/inti/images/background/1.png'); ?>); background-size: cover;">
                 <div class="container">
-                    <h3 class="title_h3  text-capitalize home_title_h3 text-center">Produk Pilihan</h3>
+                    <h3 class="title_h3  text-capitalize home_title_h3 text-center" style="color: white;">Produk Pilihan</h3>
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-6 wow fadeInLeft animated" data-wow-duration="1300ms">
                             <div class="featured_content">
@@ -259,7 +259,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                 </div>
-                                <div class="featured_detail_content">
+                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
                                     <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayo</p></a>
                                     <p class="featured_price title_h5  text-center"><span>Rp 50,000</span></p>
                                     <div class="featured_variyant  text-center">
@@ -297,7 +297,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                 </div>
-                                <div class="featured_detail_content">
+                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
                                     <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
                                     <p class="featured_price title_h5  text-center"><span>RP 430,000</span></p>
                                     <div class="featured_variyant  text-center">
@@ -328,7 +328,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="product-label  text-uppercase  new-label ">Baru!<span class="diamond_shape"></span></div>
                                     <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                 </div>
-                                <div class="featured_detail_content">
+                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
                                     <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
                                     <p class="featured_price title_h5  text-center"><span>Rp 65,000</span></p>
                                     <div class="featured_variyant  text-center">
@@ -351,7 +351,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="product-label  text-uppercase sale-label ">Diskon<span class="diamond_shape"></span></div>
                                     <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                 </div>
-                                <div class="featured_detail_content">
+                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
                                     <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
                                     <p class="featured_price title_h5  text-center"><span>Rp 97,000</span></p>
                                     <div class="featured_variyant  text-center">
@@ -374,7 +374,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="product-label  text-uppercase  new-label ">Baru!<span class="diamond_shape"></span></div>
                                     <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                 </div>
-                                <div class="featured_detail_content">
+                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
                                     <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
                                     <p class="featured_price title_h5  text-center"><span>Rp 154,000</span></p>
                                     <div class="featured_variyant  text-center">
@@ -399,9 +399,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                 </div>
-                                <div class="featured_detail_content">
+                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
                                     <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
                                     <p class="featured_price title_h5  text-center"><span>Rp 13,000</span></p>
+                                    <div class="featured_variyant  text-center">
+                                        <div class="radio text-uppercase  text-center">
+                                            <input type="radio" id="radio11"  name="size"/>
+                                            <label for="radio11">m</label>
+                                        </div>
+                                        <div class="radio text-uppercase  text-center">
+                                            <input type="radio" id="radio12"  name="size"/>
+                                            <label for="radio12">l</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -416,7 +426,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="product-label  text-uppercase  sale-label ">Diskon<span class="diamond_shape"></span></div>
                                     <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                 </div>
-                                <div class="featured_detail_content">
+                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
                                     <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
                                     <p class="featured_price title_h5  text-center"><span class="compare_price">$39.95</span><span>Rp 250,000</span></p>
                                     <div class="featured_variyant  text-center">
@@ -438,7 +448,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                 </div>
-                                <div class="featured_detail_content">
+                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
                                     <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
                                     <p class="featured_price title_h5  text-center"><span>Rp 32,500</span></p>
                                     <div class="featured_variyant  text-center">
@@ -455,9 +465,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </section>
             <!-- END Featured Products -->
             <!-- START Home Bolg Section -->
-            <section class="blog_section padding-top-text-60 wow fadeIn">
+            <section class="blog_section padding-top-text-60 wow fadeIn" style="background-image: url(<?php echo base_url('/inti/images/background/2.png'); ?>); background-size: cover;">
                 <div class="container">
-                    <h3 class="title_h3  text-capitalize home_title_h3 text-center">Blog Terbaru</h3>
+                    <h3 class="title_h3  text-capitalize home_title_h3 text-center" style="color: white;">Blog Terbaru</h3>
                     <div class="row">
                         <div class="col-md-6 wow fadeInLeft" data-wow-duration="1300ms" >
                             <div class="blog_content">
@@ -469,7 +479,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <a href="<?php echo site_url('Blog'); ?>">
                                     <h5  class="article__title title_h5">Bosen dirumah mulu?</h5>
                                 </a>
-                                <p>Ngeluh aja kamu bisanya usaha dongggg, kalo cuma ngeluh mah kapan suksesnya kalian...</p>
+                                <p class="des">Ngeluh aja kamu bisanya usaha dongggg, kalo cuma ngeluh mah kapan suksesnya kalian...</p>
                             </div>
                         </div>
                         <div class="col-md-6 wow fadeInRight" data-wow-duration="1300ms" >
@@ -482,7 +492,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <a href="<?php echo site_url('Blog'); ?>">
                                     <h5 class="article__title title_h5">Ciledug sudah bebas dari PSBB</h5>
                                 </a>
-                                <p>itu mah orang-orangnya aja yang pada barbar keluar rumahh bukan psbbnya berenti...</p>
+                                <p class="des">itu mah orang-orangnya aja yang pada barbar keluar rumahh bukan psbbnya berenti...</p>
                             </div>
                         </div>
                     </div>
@@ -492,7 +502,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- START Brand Logos Section -->
             <section class="padding-top-60 brand_logo_section wow fadeIn">
                 <div class="container">
-                    <h3 class="title_h3  text-capitalize home_title_h3 text-center wow fadeInDown">Berkerja sama dengan</h3>
+                    <h3 class="title_h3  text-capitalize home_title_h3 text-center wow fadeInDown" style="color: white;">Berkerja sama dengan</h3>
                     <div class="row">
                         <div class="col-3 align-self-center wow fadeInUp" data-wow-duration="1300ms">
                             <div class="brand_logo_img text-center">
@@ -539,7 +549,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- START Newsletter Section -->
             <section class="newsletter padding-top-text-60 padding-bottom-60 wow fadeIn">
                 <div class="container">
-                    <h3 class="title_h3  text-capitalize home_title_h3 text-center wow fadeInUp">Kalo ada langganan atau kabar" penawaran lewat email nih ko</h3>
+                    <h3 class="title_h3  text-capitalize home_title_h3 text-center wow fadeInUp" style="color: white;">Kalo ada langganan atau kabar" penawaran lewat email nih ko</h3>
                     <form class="form-inline justify-content-center">
                         <input type="email" class="form-control wow fadeInLeft"  placeholder="Masukan Email kamu" name="email">
                         <button type="submit" class="btn border-btn text-uppercase wow fadeInRight">Daftarkan Saya! <i class="flaticon-arrows"></i></button>
