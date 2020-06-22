@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Stylesheets -->
         <?php echo $css; ?>
     </head>
-    <body style="background-color:black; text-decoration-color: white;">
+    <body style="background-color:black;">
         <!-- START Scroll Top Button -->
         <a href="javascript:void(0);" id="back-to-top" class="background-btn back_to_top show">
             <i class="flaticon-left-arrow"></i>

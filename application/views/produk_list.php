@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Stylesheets -->
         <?php echo $css; ?>
     </head>
-    <body>
+    <body style="background-color:black;">
         <!-- START Scroll Top Button -->
         <a href="javascript:void(0);" id="back-to-top" class="background-btn back_to_top show"><i class="flaticon-left-arrow"></i></a>
         <!-- END Scroll Top Button -->
@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- END Header -->
         <div class="main_section">
             <!-- START Breadcrumb   -->
-            <section class="breadcrumb_section">
+            <section class="breadcrumb_section" style="background-color: : #fcb816;">
                 <div class="container">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </section>
             <!-- END Breadcrumb   -->
             <!-- START Products List Section -->
-            <section class="padding-top-text-60 padding-bottom-60 featured_section product_list_section product_list_filter_section ">
+            <section class="padding-top-text-60 padding-bottom-60 featured_section product_list_section product_list_filter_section" style="background-image: url(<?php echo base_url('/inti/images/background/3.png'); ?>);">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3">
@@ -266,22 +266,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </ul>
                                         </div>
                                     </div>
-                                    <!-- START Our Shops -->
-                                    <!-- <div class="category_list">
-                                        <div class="category_list_title">
-                                            <h5 class="title_h5">Our Shops</h5>
-                                            <span class="category_close_icon flaticon-down-arrow float-right"></span>
-                                        </div>
-                                        <div class="layer-filter">
-                                            <ul>
-                                                <li><a href="javascript:void(0);">New Arrivals</a></li>
-                                                <li><a href="javascript:void(0);">Cozy Shop</a></li>
-                                                <li><a href="javascript:void(0);">All That Sparkles</a></li>
-                                                <li><a href="javascript:void(0);">Online Exclusives </a></li>
-                                                <li><a href="javascript:void(0);">Outfit Shop</a></li>
-                                            </ul>
-                                        </div>
-                                    </div> -->
                                     <!-- START Collections -->
                                     <div class="category_list">
                                         <div class="category_list_title">
@@ -444,8 +428,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="short_by">
                                     <form>
                                         <div class="form-group">
-                                            <label for="short_by" class="title_h5">Urut Berdasarkan :</label>
-                                            <select class="form-control" id="short_by" name="short_by">
+                                            <label for="short_by" class="title_h5" style="color:#f0d400;">Urut Berdasarkan :</label>
+                                            <select class="form-control" id="short_by" name="short_by" style="background-color: #f0d400;">
                                                 <option>Produk Pilihan</option>
                                                 <option>Produk Terbaru</option>
                                                 <option>Produk Termahal</option>
@@ -476,8 +460,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="short_by show_product text-right">
                                     <form>
                                         <div class="form-group">
-                                            <label for="show"  class="title_h5">Perlihatkan :</label>
-                                            <select class="form-control" id="show" name="show"><option>24</option></select>
+                                            <label for="show"  class="title_h5" style="color:#f0d400;">Perlihatkan :</label>
+                                            <select class="form-control" id="show" name="show" style="background-color: #f0d400;"><option>24</option></select>
                                         </div>
                                     </form>
                                 </div>
@@ -495,7 +479,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apa Hayooo</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 430,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -533,7 +517,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">apa aja boleh</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 125,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -564,7 +548,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="product-label  text-uppercase  new-label ">Baruu<span class="diamond_shape"></span></div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Baju bobo</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 2,500</span></p>
                                             <div class="featured_variyant  text-center">
@@ -587,7 +571,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="product-label  text-uppercase  new-label ">Baruu<span class="diamond_shape"></span></div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Baju</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 64,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -612,7 +596,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Remot AC</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 125,000</span></p>
                                         </div>
@@ -636,7 +620,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
 
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Kemeja Loreng</p></a>
                                             <p class="featured_price title_h5  text-center"><span class="compare_price">Rp 15,000</span><span>Rp 5,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -678,7 +662,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
 
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Celana Jin</p></a>
                                             <p class="featured_price title_h5  text-center"><span class="compare_price">Rp 430,000</span><span>Rp 15,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -700,7 +684,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Jaket Kupluk</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 5,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -722,7 +706,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apa Hayooo</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 430,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -761,7 +745,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="product-label  text-uppercase  new-label ">Baruu<span class="diamond_shape"></span></div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Baju</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 64,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -788,7 +772,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="product-label  text-uppercase  new-label ">Baruu<span class="diamond_shape"></span></div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Baju bobo</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 2,500</span></p>
                                             <div class="featured_variyant  text-center">
@@ -818,7 +802,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
 
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Kemeja Loreng</p></a>
                                             <p class="featured_price title_h5  text-center"><span class="compare_price">Rp 15,000</span><span>Rp 5,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -840,7 +824,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apa Hayooo</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 430,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -878,7 +862,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">apa aja boleh</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 125,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -909,7 +893,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="product-label  text-uppercase  new-label ">Baruu<span class="diamond_shape"></span></div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Baju bobo</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 2,500</span></p>
                                             <div class="featured_variyant  text-center">
@@ -932,7 +916,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="product-label  text-uppercase  new-label ">Baruu<span class="diamond_shape"></span></div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Baju</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 64,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -957,7 +941,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Remot AC</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 125,000</span></p>
                                         </div>
@@ -981,7 +965,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
 
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Kemeja Loreng</p></a>
                                             <p class="featured_price title_h5  text-center"><span class="compare_price">Rp 15,000</span><span>Rp 5,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -1011,7 +995,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
 
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Celana Jin</p></a>
                                             <p class="featured_price title_h5  text-center">
                                                 <span class="compare_price">Rp 430,000</span><span>Rp 15,000</span>
@@ -1035,7 +1019,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Jaket Kupluk</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 5,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -1057,7 +1041,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apa Hayooo</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 430,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -1096,7 +1080,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="product-label  text-uppercase  new-label ">Baruu<span class="diamond_shape"></span></div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Baju</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 64,000</span></p>
                                             <div class="featured_variyant  text-center">
@@ -1123,7 +1107,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="product-label  text-uppercase  new-label ">Baruu<span class="diamond_shape"></span></div>
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Baju bobo</p></a>
                                             <p class="featured_price title_h5  text-center"><span>Rp 2,500</span></p>
                                             <div class="featured_variyant  text-center">
@@ -1153,7 +1137,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
 
                                         </div>
-                                        <div class="featured_detail_content">
+                                        <div class="featured_detail_content" style="background-color: #f0d400; display: block;" >
                                             <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Kemeja Loreng</p></a>
                                             <p class="featured_price title_h5  text-center"><span class="compare_price">Rp 15,000</span><span>Rp 5,000</span></p>
                                             <div class="featured_variyant  text-center">
