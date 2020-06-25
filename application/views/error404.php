@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </a>
         <!-- END Scroll Top Button -->
         <!-- START Header -->
-        <header>
+        <header style="background-color:black;">
             <?php echo $navbar; ?>
         </header>
         <div class="menu_overlay"></div>
@@ -53,10 +53,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- START 404 Section   -->
             <section class="error_page text-center padding-top-60 padding-bottom-60">
                 <div class="container">
-                    <img src="<?php echo base_url('/inti/images/404.png'); ?>" alt="404" class="img-fluid">
+                    <!-- <img src="<?php echo base_url('/inti/images/404.png'); ?>" alt="404" class="img-fluid"> -->
                     <h2 class="title_h2 text-capitalize">Halaman tidak ditemukan </h2>
-                    <p>Yang ngoding siapa sihh!!!????:</p>
-                    <p>Males amat lu jadi orang!!!</p>
                     <a href="<?php echo site_url('Home'); ?>" class="background-btn text-uppercase">Beranda</a>
                 </div>
             </section>

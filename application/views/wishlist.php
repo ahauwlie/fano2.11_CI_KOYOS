@@ -17,7 +17,7 @@
         <a href="javascript:void(0);" id="back-to-top" class="background-btn back_to_top show"><i class="flaticon-left-arrow"></i></a>
         <!-- END Scroll Top Button -->
         <!-- START Header -->
-        <header>
+        <header style="background-color:black;">
             <?php echo $navbar; ?>
         </header>
         <div class="menu_overlay"></div>

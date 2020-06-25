@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </a>
         <!-- END Scroll Top Button -->
         <!-- START Header -->
-        <header>
+        <header style="background-color:black;">
             <?php echo $navbar; ?>
         </header>
         <div class="menu_overlay"></div>

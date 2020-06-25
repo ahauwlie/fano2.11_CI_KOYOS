@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Stylesheets -->
         <?php echo $css; ?>
     </head>
-    <body>
+    <body style="background-color:black;">
         <!-- START Scroll Top Button -->
         <a href="javascript:void(0);" id="back-to-top" class="background-btn back_to_top show">
             <i class="flaticon-left-arrow"></i>
@@ -48,7 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </section>
             <!-- END Breadcrumb   -->
             <!-- START Blog Section -->
-            <section class="blog_section  padding-top-60 padding-bottom-60">
+            <section class="blog_section  padding-top-60 padding-bottom-60" style="background-image: url(<?php echo base_url('/inti/images/background/3.png'); ?>);">
                 <div class="blog_list_section wow fadeIn">
                     <div class="container">
                         <div class="row">
@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5  class="article__title title_h5">Sed ut perspiciatis unde omnis iste natus</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInRight animated" data-wow-duration="1300ms">
@@ -69,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Voluptatem accusantium dolor emque totam</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInLeft animated" data-wow-duration="1300ms">
@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Eaque ipsa quae ab illo inventore veritatis et</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInRight animated" data-wow-duration="1300ms">
@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Magni dolores eos qui ratione voluptatem sequi</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInLeft animated" data-wow-duration="1300ms">
@@ -99,7 +99,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Neque porro quisquam est qui dolorem ipsum</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInRight animated" data-wow-duration="1300ms">
@@ -109,7 +109,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Quia dolor sit amet consectetur adipisci velit</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInLeft animated" data-wow-duration="1300ms">
@@ -119,7 +119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Sed ut perspiciatis unde omnis iste natus</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInRight animated" data-wow-duration="1300ms">
@@ -129,7 +129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Voluptatem accusantium dolor emque totam</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInLeft animated" data-wow-duration="1300ms">
@@ -139,7 +139,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Eaque ipsa quae ab illo inventore veritatis et</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInRight animated" data-wow-duration="1300ms">
@@ -149,7 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Magni dolores eos qui ratione voluptatem sequi</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInLeft animated" data-wow-duration="1300ms">
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Neque porro quisquam est qui dolorem ipsum</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <div class="col-md-6 wow fadeInRight animated" data-wow-duration="1300ms">
@@ -169,7 +169,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a href="<?php echo site_url('Blog'); ?>">
                                         <h5 class="article__title title_h5">Quia dolor sit amet consectetur adipisci velit</h5>
                                     </a>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
+                                    <p class="des">Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah...</p>
                                 </div>
                             </div>
                             <!-- Blog Pagination  -->
