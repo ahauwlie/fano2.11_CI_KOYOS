@@ -112,7 +112,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <span class="product_price title_h4"> Rp 430,000</span>
                                     <span class="stock text-right">Barang Tersedia</span>
                                     <p class="sku_text">SKU: 01-2345678</p>
-                                    <div class="star"><img src="<?php echo base_url('/inti/images/star.png'); ?>"  class="img-fluid" alt="star" />(1 Review)</div>
                                 </div>
 
                                 <form>
@@ -200,35 +199,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="card-body">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="headingThree">
-                                            <h5 class="mb-0">
-                                                <button class=" btn-link title_h5 text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Reviews (1)
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <div class="review_title">
-                                                    <h4 class="title_h4">Customer Reviews</h4>
-                                                    <div class="star"><img src="<?php echo base_url('/inti/images/star.png'); ?>" class="img-fluid" alt="star"> 1 review</div>
-                                                    <a href="javascript:void(0):" class="write_review_text">Tulis Komentar</a>
-                                                </div>
-                                                <div class="review_content">
-                                                    <div class="user_img rounded-circle">
-                                                        <img src="<?php echo base_url('/inti/images/reivew_user.png'); ?>" class="img-fluid vertical_middle" alt="star">
-                                                    </div>
-                                                    <div class="user_detail">
-                                                        <h5 class="title_h5">Ammy G.</h5>
-                                                        <span class="review__date">April 5, 2020</span>
-                                                        <p>Kerennnn produknya bagusss kk!! Pengiriman cepat
-                                                        makasih. </p>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -426,7 +396,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <span class="product_price title_h4"> Rp 430,000</span>
                                         <span class="stock text-right">Barang tersedia</span>
                                         <p class="sku_text">SKU: 01-2345678</p>
-                                        <div class="star"><img src="<?php echo base_url('/inti/images/star.png'); ?>"  class="img-fluid" alt="star" />(1 Review)</div>
                                     </div>
 
                                     <form>
