@@ -52,7 +52,6 @@
               <th>Tanggal</th>
               <th>Nama Admin</th>
               <th>Quotes</th>
-              <th>Quotes Author</th>
               <th>Kategori</th>
               <th>Foto</th>
               <th>Aksi</th>
@@ -67,10 +66,9 @@
                   echo "<td>".$row['deskripsi_blog']."</td>";
                   echo "<td>".$row['tanggal_blog']."</td>";
                   echo "<td>".$row['nama_admin_blog']."</td>";
-                  echo "<td>".$row['quotes_blog']."</td>";
-                  echo "<td>".$row['quotes_author_blog']."</td>";
+                  echo "<td>".$row['mini_text_blog']."</td>";
                   echo "<td>".$row['kategori_blog']."</td>";
-                  echo "<td>".$row['img_blog']."</td>";
+                  echo "<td>".$row['img_1_blog']."</td>";
                   echo "<td class='text-center'>";
                   echo "      <a href='".site_url('blog_admin/edit/').$row['id_blog']."'><i class='fa fa-pencil'></i></a> ";
                   echo "      <a href='".site_url('blog_admin/detail/').$row['id_blog']."'><i class='fa fa-eye'></i></a> ";
@@ -88,7 +86,6 @@
               <th>Tanggal</th>
               <th>Nama Admin</th>
               <th>Quotes</th>
-              <th>Quotes Author</th>
               <th>Kategori</th>
               <th>Foto</th>
               <th>Aksi</th>

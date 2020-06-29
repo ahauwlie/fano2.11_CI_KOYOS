@@ -52,23 +52,19 @@
                     <p class="form-control-static"><?php echo $blog['nama_admin_blog']; ?></p>
                 </div>
                 <div class="form-group">
-                    <label>Quotes</label>
-                    <p class="form-control-static"><?php echo $blog['quotes_blog']; ?></p>
+                    <label>Mini Text</label>
+                    <p class="form-control-static"><?php echo $blog['mini_text_blog']; ?></p>
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="form-group">
-                  <label>Quotes Author</label>
-                  <p class="form-control-static"><?php echo $blog['quotes_author_blog']; ?></p>
-                </div>
                 <div class="form-group">
                   <label>Kategori</label>
                   <p class="form-control-static"><?php echo $blog['kategori_blog']; ?></p>
                 </div>
                 <div class="form-group p-t-4">
                   <label>Foto</label>
-                  <p class="form-control-static"><?php echo $blog['img_blog']; ?></p>
-                  <img src="<?php echo $blog['img_blog']; ?>" style="width: 300px;">
+                  <p class="form-control-static"><?php echo $blog['img_1_blog']; ?></p>
+                  <img src="<?php echo $blog['img_1_blog']; ?>" style="width: 300px;">
                 </div>
               </div>
               <div class="col-lg-6">

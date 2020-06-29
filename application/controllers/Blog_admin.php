@@ -67,9 +67,8 @@ class Blog_admin extends CI_Controller
                             'deskripsi_blog' => $this->input->post('isi'),
                             'kategori_blog' => $this->input->post('kategori'),
                             'nama_admin_blog' => $this->input->post('nama_admin'),
-                            'quotes_blog' => $this->input->post('quotes'),
-                            'img_blog' => $pict,
-                            'quotes_author_blog' => $this->input->post('quotes_author')                       
+                            'mini_text_blog' => $this->input->post('mini'),
+                            'img_1_blog' => $pict                     
                         );
                     }
                     else{
@@ -79,9 +78,8 @@ class Blog_admin extends CI_Controller
                             'deskripsi_blog' => $this->input->post('isi'),
                             'kategori_blog' => $this->input->post('kategori'),
                             'nama_admin_blog' => $this->input->post('nama_admin'),
-                            'quotes_blog' => $this->input->post('quotes'),
-                            'img_blog' => $this->input->post('foto'),
-                            'quotes_author_blog' => $this->input->post('quotes_author')
+                            'mini_text_blog' => $this->input->post('mini'),
+                            'img_1_blog' => $this->input->post('foto')
                         );
                     }                    
 
@@ -163,9 +161,8 @@ class Blog_admin extends CI_Controller
                         'deskripsi_blog' => $this->input->post('isi'),
                         'kategori_blog' => $this->input->post('kategori'),
                         'nama_admin_blog' => $this->input->post('nama_admin'),
-                        'quotes_blog' => $this->input->post('quotes'),
-                        'img_blog' => $this->input->post('foto'),
-                        'quotes_author_blog' => $this->input->post('quotes_author') 
+                        'mini_text_blog' => $this->input->post('mini'),
+                        'img_1_blog' => $this->input->post('foto') 
                     );
 
                     $this->model_blog->update(html_escape($data), $id, false);

@@ -43,7 +43,7 @@
                   <label>Deskripsi</label>
                   <div class="box-body pad">
                     <input name="isi" id="isi" value="<?php echo $blog['deskripsi_blog']; ?>" class="form-control" readonly>
-                    <textarea class="textarea" value="<?php echo $blog['deskripsi_blog']; ?>" name="isi" id="isi" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    <textarea class="textarea" placeholder="max 255 karakter" name="isi" id="isi" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                   </div>
                 </div>
                 <div class="form-group">
@@ -54,19 +54,18 @@
                     <label>Nama Admin</label>
                     <input name="nama_admin" id="nama_admin" placeholder="boleh kosong" type="text" value="<?php echo $blog['nama_admin_blog']; ?>" class="form-control" readonly>
                 </div>
-                <div class="form-group">
-                    <label>Quotes</label>
-                    <input name="quotes" id="quotes" value="<?php echo $blog['quotes_blog']; ?>" type="text" class="form-control" readonly>
-                </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group p-t-4">
-                    <label>Foto Link</label>
-                    <input name="foto" id="foto" type="text" maxlength="255" value="<?php echo $blog['img_blog']; ?>" class="form-control">
+                  <label>Mini Text</label>
+                  <div class="box-body pad">
+                    <input name="mini" id="mini" value="<?php echo $blog['mini_text_blog']; ?>" class="form-control" readonly>
+                    <textarea class="textarea" maxlength="255" name="mini" id="mini" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                  </div>
                 </div>
                 <div class="form-group p-t-4">
-                    <label>Author Quotes</label>
-                    <input name="quotes_author" id="quotes_author" type="text" maxlength="50" value="<?php echo $blog['quotes_author_blog']; ?>" class="form-control">
+                    <label>Foto Link</label>
+                    <input name="foto" id="foto" type="text" maxlength="255" value="<?php echo $blog['img_1_blog']; ?>" class="form-control">
                 </div>
                 <div class="form-group p-t-4">
                     <label>Kategori</label>

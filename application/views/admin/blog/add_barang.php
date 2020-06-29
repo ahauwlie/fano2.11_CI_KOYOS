@@ -57,15 +57,13 @@
                     <label>Nama Admin</label>
                     <input name="nama_admin" id="nama_admin" type="text" value="<?php echo $nama_adm; ?>" class="form-control" readonly>
                 </div>
-                <div class="form-group">
-                    <label>Quotes</label>
-                    <input name="quotes" id="quotes" type="text" maxlength="255" class="form-control">
-                </div>
               </div>
               <div class="col-lg-6">
-                <div class="form-group">
-                    <label>Quotes Author</label>
-                    <input name="quotes_author" id="quotes_author" type="text" maxlength="50" class="form-control">
+                <div class="form-group p-t-4">
+                  <label>Mini Text</label>
+                  <div class="box-body pad">
+                    <textarea class="textarea" placeholder="Place some text here" name="mini" id="mini" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required></textarea>
+                  </div>
                 </div>
                 <div class="form-group">
                     <label>Kategori</label>
