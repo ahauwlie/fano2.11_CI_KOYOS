@@ -56,21 +56,23 @@
                     </p>
                 </div>
                 <div class="form-group">
+                    <label>SKU</label>
+                    <p class="form-control-static"><?php echo $barang['sku_bar']; ?></p>
+                </div>
+                <div class="form-group">
                     <label>Size Barang</label>
-                    <p class="form-control-static"><?php echo $barang['size_bar']; ?></p>
+                    <p class="form-control-static" style="text-transform: uppercase;"><?php echo $barang['ukuran_xs_bar']; ?>, <?php echo $barang['ukuran_s_bar']; ?>, <?php echo $barang['ukuran_m_bar']; ?>, <?php echo $barang['ukuran_l_bar']; ?>, <?php echo $barang['ukuran_xl_bar']; ?>, <?php echo $barang['ukuran_xxl_bar']; ?></p>
                 </div>
                 <div class="form-group">
-                    <label>Tag</label>
-                    <p class="form-control-static"><?php echo $barang['tag_bar']; ?></p>
+                    <label>Mini Text</label>
+                    <p class="form-control-static"><?php echo $barang['bebas_1_bar']; ?></p>
                 </div>
                 <div class="form-group">
-                    <label>Stock</label>
-                    <p class="form-control-static"><?php echo $barang['stock_bar']; ?></p>
+                    <label>Mini Text 2</label>
+                    <p class="form-control-static"><?php echo $barang['bebas_2_bar']; ?></p>
                 </div>
-                <div class="form-group">
-                    <label>Kategori</label>
-                    <p class="form-control-static"><?php echo $barang['kategori_bar']; ?></p>
-                </div>
+              </div>
+              <div class="col-lg-6">
                 <div class="form-group p-t-4">
                   <label>Foto 1</label>
                   <p class="form-control-static"><?php echo $barang['img_1_bar']; ?></p>
@@ -81,8 +83,6 @@
                   <p class="form-control-static"><?php echo $barang['img_2_bar']; ?></p>
                   <img src="<?php echo $barang['img_2_bar']; ?>" style="width: 300px;">
                 </div>
-              </div>
-              <div class="col-lg-6">
                 <div class="form-group p-t-4">
                   <label>Foto 3</label>
                   <p class="form-control-static"><?php echo $barang['img_3_bar']; ?></p>
@@ -98,30 +98,13 @@
                   <p class="form-control-static"><?php echo $barang['img_5_bar']; ?></p>
                   <img src="<?php echo $barang['img_5_bar']; ?>" style="width: 300px;">
                 </div>
-                <div class="form-group p-t-4">
-                  <label>Foto 6</label>
-                  <p class="form-control-static"><?php echo $barang['img_6_bar']; ?></p>
-                  <img src="<?php echo $barang['img_6_bar']; ?>" style="width: 300px;">
+                <div class="form-group">
+                    <label>Stock</label>
+                    <p class="form-control-static"><?php echo $barang['stock_bar']; ?></p>
                 </div>
-                <div class="form-group p-t-4">
-                  <label>Foto 7</label>
-                  <p class="form-control-static"><?php echo $barang['img_7_bar']; ?></p>
-                  <img src="<?php echo $barang['img_7_bar']; ?>" style="width: 300px;">
-                </div>
-                <div class="form-group p-t-4">
-                  <label>Foto 8</label>
-                  <p class="form-control-static"><?php echo $barang['img_8_bar']; ?></p>
-                  <img src="<?php echo $barang['img_8_bar']; ?>" style="width: 300px;">
-                </div>
-                <div class="form-group p-t-4">
-                  <label>Foto 9</label>
-                  <p class="form-control-static"><?php echo $barang['img_9_bar']; ?></p>
-                  <img src="<?php echo $barang['img_9_bar']; ?>" style="width: 300px;">
-                </div>
-                <div class="form-group p-t-4">
-                  <label>Foto 10</label>
-                  <p class="form-control-static"><?php echo $barang['img_10_bar']; ?></p>
-                  <img src="<?php echo $barang['img_10_bar']; ?>" style="width: 300px;">
+                <div class="form-group">
+                    <label>Kategori</label>
+                    <p class="form-control-static"><?php echo $barang['kategori_bar']; ?></p>
                 </div>
               </div>
               <div class="col-lg-6">

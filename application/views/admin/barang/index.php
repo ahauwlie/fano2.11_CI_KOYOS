@@ -65,7 +65,7 @@
                   echo "<td>".$row['nama_bar']."</td>";
                   echo "<td>".$row['deskripsi_bar']."</td>";
                   echo "<td>".$row['harga_bar']."</td>";
-                  echo "<td>".$row['size_bar']."</td>";
+                  echo "<td>".$row['ukuran_m_bar']."</td>";
                   echo "<td>".$row['stock_bar']."</td>";
                   echo "<td>".$row['kategori_bar']."</td>";
                   echo "<td>".$row['img_1_bar']."</td>";

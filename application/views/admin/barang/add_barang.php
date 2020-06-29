@@ -47,39 +47,43 @@
                 </div>
                 <div class="form-group">
                     <label>Harga</label>
-                    <input name="harga" id="harga" type="number" maxlength="9" class="form-control" required>
+                    <input name="harga" id="harga" type="number" onKeyDown="if(this.value.length==9) return false;" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label>SKU</label>
-                    <input name="sku" id="sku" type="number" maxlength="9" class="form-control" required>
+                    <input name="sku" id="sku" type="number" onKeyDown="if(this.value.length==9) return false;" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label>Stock</label>
-                    <input name="stock" id="stock" type="number" maxlength="9" class="form-control" required>
+                    <input name="stock" id="stock" type="number" onKeyDown="if(this.value.length==3) return false;" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label>Kategori</label>
                     <input name="kategori" id="kategori" type="text" class="form-control" required>
                 </div>
                 <div class="form-group">
+                    <label>Ukuran xs</label>
+                    <input name="xs" id="xs" type="text" maxlength="2" placeholder="xs" class="form-control">
+                </div>
+                <div class="form-group">
                     <label>Ukuran s</label>
-                    <input name="s" id="s" type="text" maxlength="2" placeholder="S" class="form-control" required>
+                    <input name="s" id="s" type="text" maxlength="2" placeholder="s" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Ukuran m</label>
-                    <input name="m" id="m" type="text" maxlength="2" placeholder="m" class="form-control" required>
+                    <input name="m" id="m" type="text" maxlength="2" value="m" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label>Ukuran l</label>
-                    <input name="l" id="l" type="text" maxlength="2" placeholder="l" class="form-control" required>
+                    <input name="l" id="l" type="text" maxlength="2" placeholder="l" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Ukuran xl</label>
-                    <input name="xl" id="xl" type="text" maxlength="2" placeholder="xl" class="form-control" required>
+                    <input name="xl" id="xl" type="text" maxlength="2" placeholder="xl" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Ukuran xxl</label>
-                    <input name="xxl" id="xxl" type="text" maxlength="2" placeholder="xxl" class="form-control" required>
+                    <input name="xxl" id="xxl" type="text" maxlength="2" placeholder="xxl" class="form-control">
                 </div>
               </div>
               <div class="col-lg-6">

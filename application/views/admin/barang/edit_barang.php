@@ -43,12 +43,12 @@
                   <label>Deskripsi</label>
                   <div class="box-body pad">
                     <input name="deskripsi" id="deskripsi" value="<?php echo $barang['deskripsi_bar']; ?>" class="form-control" readonly>
-                    <textarea class="textarea" value="<?php echo $barang['deskripsi_bar']; ?>" name="deskripsi" id="deskripsi" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    <textarea class="textarea" placeholder="Jika tidak ingin di ubah abaikan saja yaa...." value="<?php echo $barang['deskripsi_bar']; ?>" name="deskripsi" id="deskripsi" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                   </div>
                 </div>
                 <div class="form-group">
                     <label>Harga</label>
-                    <input name="harga" id="harga" type="number" maxlength="9" class="form-control" value="<?php 
+                    <input name="harga" id="harga" type="number" onKeyDown="if(this.value.length==9) return false;" class="form-control" placeholder="<?php 
                       function rupiah($angka){                        
                           $hasil_rupiah = "Rp " . number_format($angka,2,',','.');
                           return $hasil_rupiah;                       
@@ -57,16 +57,37 @@
                       ?>" required>
                 </div>
                 <div class="form-group">
-                    <label>Size Barang</label>
-                    <input name="size" id="size" type="text" class="form-control" value="<?php echo $barang['size_bar']; ?>" required>
+                    <label>SKU</label>
+                    <input name="sku" id="sku" type="number" onKeyDown="if(this.value.length==9) return false;" class="form-control" value="<?php echo $barang['sku_bar']; ?>" required>
                 </div>
+                <div class="form-group">
+                    <label>Size Barang</label>
+                    <input name="xs" id="xs" type="text" maxlength="2" class="form-control" value="<?php echo $barang['ukuran_xs_bar']; ?>" >
+                    <input name="s" id="s" type="text" maxlength="2" class="form-control" value="<?php echo $barang['ukuran_s_bar']; ?>" >
+                    <input name="m" id="m" type="text" maxlength="2" class="form-control" value="<?php echo $barang['ukuran_m_bar']; ?>" required>
+                    <input name="l" id="l" type="text" maxlength="2" class="form-control" value="<?php echo $barang['ukuran_l_bar']; ?>" >
+                    <input name="xl" id="xl" type="text" maxlength="2" class="form-control" value="<?php echo $barang['ukuran_xl_bar']; ?>" >
+                    <input name="xxl" id="xxl" type="text" maxlength="2" class="form-control" value="<?php echo $barang['ukuran_xxl_bar']; ?>" >
+                </div>
+                <div class="form-group p-t-4">
+                  <label>Mini Text</label>
+                  <div class="box-body pad">
+                    <input name="bebas1" id="bebas1" value="<?php echo $barang['bebas_1_bar']; ?>" class="form-control" readonly>
+                    <textarea class="textarea" placeholder="Jika tidak ingin di ubah abaikan saja yaa...." value="<?php echo $barang['bebas_1_bar']; ?>" name="bebas1" id="bebas1" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                  </div>
+                </div>
+                <div class="form-group p-t-4">
+                  <label>Mini Text 2</label>
+                  <div class="box-body pad">
+                    <input name="bebas2" id="bebas2" value="<?php echo $barang['bebas_2_bar']; ?>" class="form-control" readonly>
+                    <textarea class="textarea" placeholder="Jika tidak ingin di ubah abaikan saja yaa...." value="<?php echo $barang['bebas_2_bar']; ?>" name="bebas2" id="bebas2" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
                 <div class="form-group">
                     <label>Kategori</label>
                     <input name="kategori" id="kategori" placeholder="boleh kosong" type="text" value="<?php echo $barang['kategori_bar']; ?>" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Tag</label>
-                    <input name="tag" id="tag" placeholder="boleh kosong" type="text" value="<?php echo $barang['tag_bar']; ?>" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Stock</label>
@@ -76,8 +97,6 @@
                     <label>Foto Link</label>
                     <input name="foto" id="foto" type="text" maxlength="255" value="<?php echo $barang['img_1_bar']; ?>" class="form-control">
                 </div>
-              </div>
-              <div class="col-lg-6">
                 <div class="form-group p-t-4">
                     <label>Foto Link 2</label>
                     <input name="foto2" id="foto2" type="text" maxlength="255" value="<?php echo $barang['img_2_bar']; ?>" class="form-control">
@@ -93,26 +112,6 @@
                 <div class="form-group p-t-4">
                     <label>Foto Link 5</label>
                     <input name="foto5" id="foto5" type="text" maxlength="255" value="<?php echo $barang['img_5_bar']; ?>" class="form-control">
-                </div>
-                <div class="form-group p-t-4">
-                    <label>Foto Link 6</label>
-                    <input name="foto6" id="foto6" type="text" maxlength="255" value="<?php echo $barang['img_6_bar']; ?>" class="form-control">
-                </div>
-                <div class="form-group p-t-4">
-                    <label>Foto Link 7</label>
-                    <input name="foto7" id="foto7" type="text" maxlength="255" value="<?php echo $barang['img_7_bar']; ?>" class="form-control">
-                </div>
-                <div class="form-group p-t-4">
-                    <label>Foto Link 8</label>
-                    <input name="foto8" id="foto8" type="text" maxlength="255" value="<?php echo $barang['img_8_bar']; ?>" class="form-control">
-                </div>
-                <div class="form-group p-t-4">
-                    <label>Foto Link 9</label>
-                    <input name="foto9" id="foto9" type="text" maxlength="255" value="<?php echo $barang['img_9_bar']; ?>" class="form-control">
-                </div>
-                <div class="form-group p-t-4">
-                    <label>Foto Link 10</label>
-                    <input name="foto10" id="foto10" type="text" maxlength="255" value="<?php echo $barang['img_10_bar']; ?>" class="form-control">
                 </div>
               </div>
               <div class="col-lg-6">
