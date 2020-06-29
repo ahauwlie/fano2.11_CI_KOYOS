@@ -71,8 +71,7 @@
                 <th>Tanggal</th>
                 <th>Deskripsi</th>
                 <th>Nama Admin</th>
-                <th>Quotes</th>
-                <th>Quotes Author</th>
+                <th>Mini Text</th>
                 <th>Foto</th>
                 <th>Kategori</th>
               </tr>";
@@ -85,12 +84,11 @@
                 $tanggal_blog = $row['B']; 
                 $deskripsi_blog = $row['C']; 
                 $nama_admin_blog = $row['D'];
-                $quotes_blog = $row['E']; 
-                $quotes_author_blog = $row['F']; 
-                $img_blog = $row['G'];
-                $kategori_blog = $row['H'];
+                $mini_text_blog = $row['E'];
+                $img_1_blog = $row['F'];
+                $kategori_blog = $row['G'];
                 
-                if(empty($judul_blog) && ! empty($tanggal_blog) && ! empty($deskripsi_blog) && ! empty($nama_admin_blog) && ! empty($img_blog) &&  ! empty($kategori_blog))
+                if(empty($judul_blog) && ! empty($tanggal_blog) && ! empty($deskripsi_blog) && ! empty($nama_admin_blog) && ! empty($img_1_blog) &&  ! empty($kategori_blog))
                   continue;
                 
                 if($numrow > 1){
@@ -98,12 +96,11 @@
                   $tanggal_blog_td = ( ! empty($tanggal_blog))? "" : " style='background: #E07171;'"; 
                   $deskripsi_blog_td = ( ! empty($deskripsi_blog))? "" : " style='background: #E07171;'";
                   $nama_admin_blog_td = ( ! empty($nama_admin_blog))? "" : " style='background: #E07171;'"; 
-                  $quotes_blog_td = ( ! empty($quotes_blog))? "" : " style='background: #E07171;'"; 
-                  $quotes_author_blog_td = ( ! empty($quotes_author_blog))? "" : " style='background: #E07171;'";
-                  $img_blog_td = ( ! empty($img_blog))? "" : " style='background: #E07171;'"; 
+                  $mini_text_blog_td = ( ! empty($mini_text_blog))? "" : " style='background: #E07171;'"; 
+                  $img_1_blog_td = ( ! empty($img_1_blog))? "" : " style='background: #E07171;'"; 
                   $kategori_blog_td = ( ! empty($kategori_blog))? "" : " style='background: #E07171;'"; 
                   
-                  if(empty($judul_blog) or empty($tanggal_blog) or empty($deskripsi_blog) or empty($nama_admin_blog) or empty($img_blog) or empty($kategori_blog)){
+                  if(empty($judul_blog) or empty($tanggal_blog) or empty($deskripsi_blog) or empty($nama_admin_blog) or empty($img_1_blog) or empty($kategori_blog)){
                     $kosong++; 
                   }
                   
@@ -112,9 +109,8 @@
                   echo "<td".$tanggal_blog_td.">".$tanggal_blog."</td>";
                   echo "<td".$deskripsi_blog_td.">".$deskripsi_blog."</td>";
                   echo "<td".$nama_admin_blog_td.">".$nama_admin_blog."</td>";
-                  echo "<td".$quotes_blog_td.">".$quotes_blog."</td>";
-                  echo "<td".$quotes_author_blog_td.">".$quotes_author_blog."</td>";
-                  echo "<td".$img_blog_td.">".$img_blog."</td>";
+                  echo "<td".$mini_text_blog_td.">".$mini_text_blog."</td>";
+                  echo "<td".$img_1_blog_td.">".$img_1_blog."</td>";
                   echo "<td".$kategori_blog_td.">".$kategori_blog."</td>";
                   echo "</tr>";
                 }

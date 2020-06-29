@@ -48,11 +48,30 @@
               <div class="small-box bg-aqua">
                 <div class="inner">
                   <h3>
-                    <?php foreach ($sum_project as $row) : ?>
+                    <?php foreach ($sum_blog as $row) : ?>
                       <span><?=  $row->num_of_time  ?></span>
                     <?php endforeach; ?>
                   </h3>
                   <p>Jumlah Total Artikel Yang Ada</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-android-bookmark"></i>
+                </div>
+                <a href=" " class="small-box-footer">Telusuri <i class="fa fa-arrow-circle-right"></i></a>
+                <!-- <?php echo site_url('Barang_admin/index') ?> -->
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-aqua">
+                <div class="inner">
+                  <h3>
+                    <?php foreach ($sum_barang as $row) : ?>
+                      <span><?=  $row->num_of_time  ?></span>
+                    <?php endforeach; ?>
+                  </h3>
+                  <p>Jumlah Total PRODUK Yang Ada</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-bag"></i>

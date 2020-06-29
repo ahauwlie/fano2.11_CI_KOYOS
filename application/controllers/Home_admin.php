@@ -6,7 +6,8 @@ class Home_admin extends CI_Controller
 {
 	 public function __construct(){
 	    parent::__construct();
-	    // $this->load->model('model_blog');
+	    $this->load->model('model_blog');
+	    $this->load->model('model_barang');
 	    $this->load->model('user_manage');
   	}
 
@@ -24,7 +25,8 @@ class Home_admin extends CI_Controller
 		        $data['footer'] = $this->load->view('layout/admin_footer.php', NULL, TRUE);
 		        $data['preloader'] = $this->load->view('layout/admin_sidebar.php', NULL, TRUE);
 		        $data['sum_user'] = $this->user_manage->countRow();
-		        // $data['sum_blog'] = $this->model_blog->countRow();
+		        $data['sum_blog'] = $this->model_blog->countRow();
+		        $data['sum_barang'] = $this->model_barang->countRow();
 		        $this->load->view('admin/home/home_admin', $data);
 			}
 		}

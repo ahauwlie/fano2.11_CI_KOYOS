@@ -80,10 +80,9 @@ class Blog_import_admin extends CI_Controller {
           'tanggal_blog'=>$row['B'], 
           'deskripsi_blog'=>$row['C'], 
           'nama_admin_blog'=>$row['D'],
-          'quotes_blog'=>$row['E'],
-          'quotes_author_blog'=>$row['F'],
-          'img_blog'=>$row['G'],
-          'kategori_blog'=>$row['H']
+          'mini_text_blog'=>$row['E'],
+          'img_1_blog'=>$row['F'],
+          'kategori_blog'=>$row['G']
         ));
       }
       
