@@ -70,20 +70,22 @@
                 <th>nama</th>
                 <th>harga</th>
                 <th>deskripsi</th>
-                <th>size</th>
-                <th>tag</th>
+                <th>sku</th>
+                <th>ukuran xs</th>
+                <th>ukuran s</th>
+                <th>ukuran m</th>
+                <th>ukuran l</th>
+                <th>ukuran xl</th>
+                <th>ukuran xxl</th>
+                <th>mini text</th>
+                <th>mini text 2</th>
+                <th>stock</th>
                 <th>kategori</th>
-                <th>Foto 1</th>
+                <th>Foto</th>
                 <th>Foto 2</th>
                 <th>Foto 3</th>
                 <th>Foto 4</th>
                 <th>Foto 5</th>
-                <th>Foto 6</th>
-                <th>Foto 7</th>
-                <th>Foto 8</th>
-                <th>Foto 9</th>
-                <th>Foto 10</th>
-                <th>Stock</th>
               </tr>";
               
               $numrow = 1;
@@ -93,44 +95,48 @@
                 $nama_bar = $row['A']; 
                 $harga_bar = $row['B']; 
                 $deskripsi_bar = $row['C']; 
-                $size_bar = $row['D'];
-                $tag_bar = $row['E']; 
-                $kategori_bar = $row['F']; 
-                $img_1_bar = $row['G'];
-                $img_2_bar = $row['H'];
-                $img_3_bar = $row['I'];
-                $img_4_bar = $row['J'];
-                $img_5_bar = $row['K'];
-                $img_6_bar = $row['L'];
-                $img_7_bar = $row['M'];
-                $img_8_bar = $row['N'];
-                $img_9_bar = $row['O'];
-                $img_10_bar = $row['P'];
-                $stock_bar = $row['Q'];
+                $sku_bar = $row['D'];
+                $ukuran_xs_bar = $row['E']; 
+                $ukuran_s_bar = $row['F']; 
+                $ukuran_m_bar = $row['G'];
+                $ukuran_l_bar = $row['H'];
+                $ukuran_xl_bar = $row['I'];
+                $ukuran_xxl_bar = $row['J'];
+                $bebas_1_bar = $row['K'];
+                $bebas_2_bar = $row['L'];
+                $stock_bar = $row['M'];
+                $kategori_bar = $row['N'];
+                $img_1_bar = $row['O'];
+                $img_2_bar = $row['P'];
+                $img_3_bar = $row['Q'];
+                $img_4_bar = $row['R'];
+                $img_5_bar = $row['S'];
                 
-                if(empty($nama_bar) && ! empty($harga_bar) && ! empty($deskripsi_bar) && ! empty($size_bar) && ! empty($tag_bar) &&  ! empty($kategori_bar) && ! empty($img_1_bar) && ! empty($img_2_bar) && ! empty($img_3_bar) && ! empty($img_4_bar) && ! empty($img_5_bar) && ! empty($img_6_bar) && ! empty($img_7_bar) && ! empty($img_8_bar) && ! empty($img_9_bar) && ! empty($img_10_bar) && ! empty($stock_bar))
+                if(empty($nama_bar) && ! empty($harga_bar) && ! empty($deskripsi_bar) && ! empty($sku_bar) && ! empty($ukuran_xs_bar) &&  ! empty($ukuran_s_bar) && ! empty($ukuran_m_bar) && ! empty($ukuran_l_bar) && ! empty($ukuran_xl_bar) && ! empty($ukuran_xxl_bar) && ! empty($bebas_1_bar) && ! empty($bebas_2_bar) && ! empty($stock_bar) && ! empty($kategori_bar) && ! empty($img_1_bar) && ! empty($img_2_bar) && ! empty($img_3_bar) && ! empty($img_4_bar) && ! empty($img_5_bar))
                   continue;
                 
                 if($numrow > 1){
                   $nama_bar_td = ( ! empty($nama_bar))? "" : " style='background: #E07171;'"; 
                   $harga_bar_td = ( ! empty($harga_bar))? "" : " style='background: #E07171;'"; 
                   $deskripsi_bar_td = ( ! empty($deskripsi_bar))? "" : " style='background: #E07171;'";
-                  $size_bar_td = ( ! empty($size_bar))? "" : " style='background: #E07171;'"; 
-                  $tag_bar_td = ( ! empty($tag_bar))? "" : " style='background: #E07171;'"; 
-                  $kategori_bar_td = ( ! empty($kategori_bar))? "" : " style='background: #E07171;'";
-                  $img_1_bar_td = ( ! empty($img_1_bar))? "" : " style='background: #E07171;'"; 
-                  $img_2_bar_td = ( ! empty($img_2_bar))? "" : " style='background: #E07171;'"; 
-                  $img_3_bar_td = ( ! empty($img_3_bar))? "" : " style='background: #E07171;'"; 
-                  $img_4_bar_td = ( ! empty($img_4_bar))? "" : " style='background: #E07171;'"; 
-                  $img_5_bar_td = ( ! empty($img_5_bar))? "" : " style='background: #E07171;'";
-                  $img_6_bar_td = ( ! empty($img_6_bar))? "" : " style='background: #E07171;'";
-                  $img_7_bar_td = ( ! empty($img_7_bar))? "" : " style='background: #E07171;'";
-                  $img_8_bar_td = ( ! empty($img_8_bar))? "" : " style='background: #E07171;'";
-                  $img_9_bar_td = ( ! empty($img_9_bar))? "" : " style='background: #E07171;'";
-                  $img_10_bar_td = ( ! empty($img_10_bar))? "" : " style='background: #E07171;'";
+                  $sku_bar_td = ( ! empty($sku_bar))? "" : " style='background: #E07171;'"; 
+                  $ukuran_xs_bar_td = ( ! empty($ukuran_xs_bar))? "" : " style='background: #E07171;'"; 
+                  $ukuran_s_bar_td = ( ! empty($ukuran_s_bar))? "" : " style='background: #E07171;'";
+                  $ukuran_m_bar_td = ( ! empty($ukuran_m_bar))? "" : " style='background: #E07171;'"; 
+                  $ukuran_l_bar_td = ( ! empty($ukuran_l_bar))? "" : " style='background: #E07171;'"; 
+                  $ukuran_xl_bar_td = ( ! empty($ukuran_xl_bar))? "" : " style='background: #E07171;'"; 
+                  $ukuran_xxl_bar_td = ( ! empty($ukuran_xxl_bar))? "" : " style='background: #E07171;'"; 
+                  $bebas_1_bar_td = ( ! empty($bebas_1_bar))? "" : " style='background: #E07171;'";
+                  $bebas_2_bar_td = ( ! empty($bebas_2_bar))? "" : " style='background: #E07171;'";
                   $stock_bar_td = ( ! empty($stock_bar))? "" : " style='background: #E07171;'";
+                  $kategori_bar_td = ( ! empty($kategori_bar))? "" : " style='background: #E07171;'";
+                  $img_1_bar_td = ( ! empty($img_1_bar))? "" : " style='background: #E07171;'";
+                  $img_2_bar_td = ( ! empty($img_2_bar))? "" : " style='background: #E07171;'";
+                  $img_3_bar_td = ( ! empty($img_3_bar))? "" : " style='background: #E07171;'";
+                  $img_4_bar_td = ( ! empty($img_4_bar))? "" : " style='background: #E07171;'";
+                  $img_5_bar_td = ( ! empty($img_5_bar))? "" : " style='background: #E07171;'";
                   
-                  if(empty($nama_bar) or empty($harga_bar) or empty($deskripsi_bar) or empty($size_bar) or empty($tag_bar) or  empty($kategori_bar) or empty($img_1_bar)){
+                  if(empty($nama_bar) or empty($harga_bar) or empty($deskripsi_bar) or empty($sku_bar) or empty($stock_bar) or  empty($kategori_bar) or empty($img_1_bar)){
                     $kosong++; 
                   }
                   
@@ -138,20 +144,22 @@
                   echo "<td".$nama_bar_td.">".$nama_bar."</td>";
                   echo "<td".$harga_bar_td.">".$harga_bar."</td>";
                   echo "<td".$deskripsi_bar_td.">".$deskripsi_bar."</td>";
-                  echo "<td".$size_bar_td.">".$size_bar."</td>";
-                  echo "<td".$tag_bar_td.">".$tag_bar."</td>";
+                  echo "<td".$sku_bar_td.">".$sku_bar."</td>";
+                  echo "<td".$ukuran_xs_bar_td.">".$ukuran_xs_bar."</td>";
+                  echo "<td".$ukuran_s_bar_td.">".$ukuran_s_bar."</td>";
+                  echo "<td".$ukuran_m_bar_td.">".$ukuran_m_bar."</td>";
+                  echo "<td".$ukuran_l_bar_td.">".$ukuran_l_bar."</td>";
+                  echo "<td".$ukuran_xl_bar_td.">".$ukuran_xl_bar."</td>";
+                  echo "<td".$ukuran_xxl_bar_td.">".$ukuran_xxl_bar."</td>";
+                  echo "<td".$bebas_1_bar_td.">".$bebas_1_bar."</td>";
+                  echo "<td".$bebas_2_bar_td.">".$bebas_2_bar."</td>";
+                  echo "<td".$stock_bar_td.">".$stock_bar."</td>";
                   echo "<td".$kategori_bar_td.">".$kategori_bar."</td>";
                   echo "<td".$img_1_bar_td.">".$img_1_bar."</td>";
                   echo "<td".$img_2_bar_td.">".$img_2_bar."</td>";
                   echo "<td".$img_3_bar_td.">".$img_3_bar."</td>";
                   echo "<td".$img_4_bar_td.">".$img_4_bar."</td>";
                   echo "<td".$img_5_bar_td.">".$img_5_bar."</td>";
-                  echo "<td".$img_6_bar_td.">".$img_6_bar."</td>";
-                  echo "<td".$img_7_bar_td.">".$img_7_bar."</td>";
-                  echo "<td".$img_8_bar_td.">".$img_8_bar."</td>";
-                  echo "<td".$img_9_bar_td.">".$img_9_bar."</td>";
-                  echo "<td".$img_10_bar_td.">".$img_10_bar."</td>";
-                  echo "<td".$stock_bar_td.">".$stock_bar."</td>";
                   echo "</tr>";
                 }
                 
