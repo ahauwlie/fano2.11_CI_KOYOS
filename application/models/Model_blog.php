@@ -57,8 +57,8 @@ class Model_blog extends CI_Model {
 	     	return $query->result();
     	}
 
-    	public function atas3(){
-	        $query = $this->db->query("SELECT * FROM blog ORDER BY tanggal_blog DESC LIMIT 3");
+    	public function home2(){
+	        $query = $this->db->query("SELECT * FROM blog ORDER BY tanggal_blog DESC LIMIT 2");
 	     	return $query->result();
     	}
 

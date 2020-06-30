@@ -57,8 +57,8 @@ class Model_barang extends CI_Model {
 	     	return $query->result();
     	}
 
-    	public function atas3(){
-	        $query = $this->db->query("SELECT * FROM barang ORDER BY tanggal_bar DESC LIMIT 3");
+    	public function pilihanproduk(){
+	        $query = $this->db->query("SELECT * FROM barang ORDER BY id_bar DESC LIMIT 8");
 	     	return $query->result();
     	}
 
@@ -68,7 +68,7 @@ class Model_barang extends CI_Model {
 
     	public function getAr($limit, $start) {
 	        $this->db->limit($limit, $start);
-	        $query = $this->db->get('barang');
+	        $query = $this->db->query("SELECT * FROM barang ORDER BY id_bar DESC");
 
 	        if ($query->num_rows() > 0) {
 	            foreach ($query->result() as $row) {
@@ -78,6 +78,38 @@ class Model_barang extends CI_Model {
 	        }
 	        return false;
 	    }
+
+	    public function minimum($limit, $start) {
+	        $this->db->limit($limit, $start);
+	        $query = $this->db->query("SELECT * FROM barang ORDER BY harga_bar ASC");
+
+	        if ($query->num_rows() > 0) {
+	            foreach ($query->result() as $row) {
+	                $data[] = $row;
+	            }
+	            return $data;
+	        }
+	        return false;
+	    }
+
+    	public function maximum($limit, $start) {
+	        $this->db->limit($limit, $start);
+	        $query = $this->db->query("SELECT * FROM barang ORDER BY harga_bar DESC");
+
+	        if ($query->num_rows() > 0) {
+	            foreach ($query->result() as $row) {
+	                $data[] = $row;
+	            }
+	            return $data;
+	        }
+	        return false;
+	    }
+
+	    public function showme($kategori_bar)
+		{ 
+			$query = $this->db->get_where('barang', array('kategori_bar' => $kategori_bar));
+			return $query->result();
+		}
 
     	public function side(){
 			$this->db->order_by('tanggal_bar','desc');

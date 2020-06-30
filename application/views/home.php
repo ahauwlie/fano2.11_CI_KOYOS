@@ -249,217 +249,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <h3 class="title_h3  text-capitalize home_title_h3 text-center" style="color: white;">Produk Pilihan</h3>
                     <div class="row">
-                        <div class="col-lg-3 col-md-4 col-6 wow fadeInLeft animated" data-wow-duration="1300ms">
-                            <div class="featured_content">
-                                <div class="featured_img_content">
-                                    <img src="<?php echo base_url('/inti/images/f_product1.png'); ?>" alt="f_product" class="img-fluid"/>
-                                    <div class="featured_btn vertical_middle">
-                                        <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
-                                        <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
+                        <?php  foreach ($barang as $row) : ?> 
+                            <div class="col-lg-3 col-md-4 col-6 wow fadeInLeft animated" data-wow-duration="1300ms">
+                                <div class="featured_content">
+                                    <div class="featured_img_content">
+                                        <img src="<?=  $row->img_1_bar  ?>" alt="f_product" class="img-fluid"/>
+                                        <div class="featured_btn vertical_middle">
+                                            <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
+                                            <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="<?php echo '#modalone'.$row->id_bar ?>">Lihat</a>
+                                        </div>
+                                        <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
                                     </div>
-                                    <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
-                                </div>
-                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
-                                    <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayo</p></a>
-                                    <p class="featured_price title_h5  text-center"><span>Rp 50,000</span></p>
-                                    <div class="featured_variyant  text-center">
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio1" name="size"/>
-                                            <label for="radio1">xs</label>
-                                        </div>
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio2" name="size"/>
-                                            <label for="radio2">s</label>
-                                        </div>
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio3" name="size"/>
-                                            <label for="radio3">m</label>
-                                        </div>
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio4" name="size"/>
-                                            <label for="radio4">l</label>
-                                        </div>
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio5" name="size"/>
-                                            <label for="radio5">xl</label>
-                                        </div>
+                                    <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
+                                        <a href="<?php echo site_url('Home/detail_barang/'.$row->id_bar); ?>"><p class="featured_title  text-capitalize  text-center"><?=  $row->nama_bar  ?></p></a>
+                                        <p class="featured_price title_h5  text-center"><span><?php echo "Rp ".number_format($row->harga_bar, 0,",","."); ?></span></p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6 wow fadeInLeft animated" data-wow-duration="1300ms" data-wow-delay="0.2s">
-                            <div class="featured_content">
-                                <div class="featured_img_content">
-                                    <img src="<?php echo base_url('/inti/images/f_product2.png'); ?>" alt="f_product" class="img-fluid"/>
-                                    <div class="featured_btn vertical_middle">
-                                        <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
-                                        <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
-                                    </div>
-                                    <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
-                                </div>
-                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
-                                    <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
-                                    <p class="featured_price title_h5  text-center"><span>RP 430,000</span></p>
-                                    <div class="featured_variyant  text-center">
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio6"  name="size"/>
-                                            <label for="radio6">s</label>
-                                        </div>
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio7"  name="size"/>
-                                            <label for="radio7">m</label>
-                                        </div>
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio8"  name="size"/>
-                                            <label for="radio8">l</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6 wow fadeInLeft animated" data-wow-duration="1300ms" data-wow-delay="0.4s">
-                            <div class="featured_content">
-                                <div class="featured_img_content">
-                                    <img src="<?php echo base_url('/inti/images/f_product3.png'); ?>" alt="f_product" class="img-fluid"/>
-                                    <div class="featured_btn vertical_middle">
-                                        <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
-                                        <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
-                                    </div>
-                                    <div class="product-label  text-uppercase  new-label ">Baru!<span class="diamond_shape"></span></div>
-                                    <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
-                                </div>
-                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
-                                    <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
-                                    <p class="featured_price title_h5  text-center"><span>Rp 65,000</span></p>
-                                    <div class="featured_variyant  text-center">
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio9"  name="size"/>
-                                            <label for="radio9">l</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6 wow fadeInLeft animated" data-wow-duration="1300ms" data-wow-delay="0.6s">
-                            <div class="featured_content">
-                                <div class="featured_img_content">
-                                    <img src="<?php echo base_url('/inti/images/f_product4.png'); ?>" alt="f_product" class="img-fluid"/>
-                                    <div class="featured_btn vertical_middle">
-                                        <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
-                                        <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
-                                    </div>
-                                    <div class="product-label  text-uppercase sale-label ">Diskon<span class="diamond_shape"></span></div>
-                                    <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
-                                </div>
-                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
-                                    <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
-                                    <p class="featured_price title_h5  text-center"><span>Rp 97,000</span></p>
-                                    <div class="featured_variyant  text-center">
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio10"  name="size"/>
-                                            <label for="radio10">M</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6 wow fadeInRight animated" data-wow-duration="1300ms" >
-                            <div class="featured_content">
-                                <div class="featured_img_content">
-                                    <img src="<?php echo base_url('/inti/images/f_product5.png'); ?>" alt="f_product" class="img-fluid"/>
-                                    <div class="featured_btn vertical_middle">
-                                        <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
-                                        <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
-                                    </div>
-                                    <div class="product-label  text-uppercase  new-label ">Baru!<span class="diamond_shape"></span></div>
-                                    <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
-                                </div>
-                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
-                                    <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
-                                    <p class="featured_price title_h5  text-center"><span>Rp 154,000</span></p>
-                                    <div class="featured_variyant  text-center">
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio11"  name="size"/>
-                                            <label for="radio11">m</label>
-                                        </div>
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio12"  name="size"/>
-                                            <label for="radio12">l</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6 wow fadeInRight animated" data-wow-duration="1300ms" data-wow-delay="0.2s">
-                            <div class="featured_content">
-                                <div class="featured_img_content">
-                                    <img src="<?php echo base_url('/inti/images/f_product6.png'); ?>" alt="f_product" class="img-fluid"/>
-                                    <div class="featured_btn vertical_middle">
-                                        <span class="text-uppercase background-btn sold_out_btn">Kosong!</span>
-                                    </div>
-                                    <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
-                                </div>
-                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
-                                    <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
-                                    <p class="featured_price title_h5  text-center"><span>Rp 13,000</span></p>
-                                    <div class="featured_variyant  text-center">
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio11"  name="size"/>
-                                            <label for="radio11">m</label>
-                                        </div>
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio12"  name="size"/>
-                                            <label for="radio12">l</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6 wow fadeInRight animated" data-wow-duration="1300ms" data-wow-delay="0.4s">
-                            <div class="featured_content">
-                                <div class="featured_img_content">
-                                    <img src="<?php echo base_url('/inti/images/f_product7.png'); ?>" alt="f_product" class="img-fluid"/>
-                                    <div class="featured_btn vertical_middle">
-                                        <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
-                                        <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
-                                    </div>
-                                    <div class="product-label  text-uppercase  sale-label ">Diskon<span class="diamond_shape"></span></div>
-                                    <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
-                                </div>
-                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
-                                    <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
-                                    <p class="featured_price title_h5  text-center"><span class="compare_price">$39.95</span><span>Rp 250,000</span></p>
-                                    <div class="featured_variyant  text-center">
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio13"  name="size"/>
-                                            <label for="radio13">m</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6 wow fadeInRight animated" data-wow-duration="1300ms" data-wow-delay="0.6s">
-                            <div class="featured_content">
-                                <div class="featured_img_content">
-                                    <img src="<?php echo base_url('/inti/images/f_product8.png'); ?>" alt="f_product" class="img-fluid"/>
-                                    <div class="featured_btn vertical_middle">
-                                        <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
-                                        <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
-                                    </div>
-                                    <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
-                                </div>
-                                <div class="featured_detail_content" style="background-color: #f0d400; display: block;">
-                                    <a href="<?php echo site_url('Home/detail_barang'); ?>"><p class="featured_title  text-capitalize  text-center">Apahayoo</p></a>
-                                    <p class="featured_price title_h5  text-center"><span>Rp 32,500</span></p>
-                                    <div class="featured_variyant  text-center">
-                                        <div class="radio text-uppercase  text-center">
-                                            <input type="radio" id="radio14"  name="size"/>
-                                            <label for="radio14">l</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </section>
@@ -469,32 +276,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <h3 class="title_h3  text-capitalize home_title_h3 text-center" style="color: white;">Blog Terbaru</h3>
                     <div class="row">
-                        <div class="col-md-6 wow fadeInLeft" data-wow-duration="1300ms" >
-                            <div class="blog_content">
-                                <a href="<?php echo site_url('Blog'); ?>"><img src="<?php echo base_url('/inti/images/blog1.png'); ?>" alt="blog" class="img-fluid"></a>
-                                <span class="article__date">
-                                    Mei 24, 2020 | Posted By Admin
-                                    <span class="diamond_shape"></span>
-                                </span>
-                                <a href="<?php echo site_url('Blog'); ?>">
-                                    <h5  class="article__title title_h5">Bosen dirumah mulu?</h5>
-                                </a>
-                                <p class="des">Ngeluh aja kamu bisanya usaha dongggg, kalo cuma ngeluh mah kapan suksesnya kalian...</p>
+                        <?php  foreach ($blog as $row) : ?>
+                            <div class="col-md-6 wow fadeInLeft" data-wow-duration="1300ms" >
+                                <div class="blog_content">
+                                    <a href="<?php echo site_url('Blog'); ?>"><img src="<?=  $row->img_1_blog  ?>" alt="blog" class="img-fluid"></a>
+                                    <span class="article__date">
+                                        <?=  $row->tanggal_blog  ?> | Posted By <?=  $row->nama_admin_blog  ?>
+                                        <span class="diamond_shape"></span>
+                                    </span>
+                                    <a href="<?php echo site_url('Blog'); ?>">
+                                        <h5  class="article__title title_h5"><?=  $row->judul_blog  ?></h5>
+                                    </a>
+                                    <p class="des"><?=  $row->mini_text_blog  ?></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 wow fadeInRight" data-wow-duration="1300ms" >
-                            <div class="blog_content">
-                                <a href="<?php echo site_url('Blog'); ?>"> <img src="<?php echo base_url('/inti/images/blog2.png'); ?>" alt="blog" class="img-fluid"></a>
-                                <span class="article__date">
-                                    Mei 24, 2020 | Posted By Admin
-                                    <span class="diamond_shape"></span>
-                                </span>
-                                <a href="<?php echo site_url('Blog'); ?>">
-                                    <h5 class="article__title title_h5">Ciledug sudah bebas dari PSBB</h5>
-                                </a>
-                                <p class="des">itu mah orang-orangnya aja yang pada barbar keluar rumahh bukan psbbnya berenti...</p>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </section>
@@ -559,128 +355,80 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- END Newsletter Section -->
         </div>
         <!-- START Lihat Popup Section  -->
-        <div id="modalone" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <a href="javascript:void(0);" class="close_popup"><span>&times;</span></a>
-                <div class="product_detail_section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div id="q_sync1" class="owl-carousel owl-theme">
-                                    <div class="item">
-                                        <div class="product_img">
-                                            <img src="<?php echo base_url('/inti/images/blue_jacket_img.png'); ?>" alt="blue_jacket_img" class="vertical_middle img-fluid" />
+        <?php  foreach ($barang as $row) : ?>
+            <div id="<?php echo 'modalone'.$row->id_bar ?>" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <a href="javascript:void(0);" class="close_popup"><span>&times;</span></a>
+                    <div class="product_detail_section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div id="q_sync1" class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <div class="product_img">
+                                                <img src="<?=  $row->img_1_bar  ?>" alt="foto_rusak!" class="vertical_middle img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product_img">
+                                                <img src="<?=  $row->img_2_bar  ?>" alt="foto_rusak!" class="vertical_middle img-fluid"/>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product_img">
+                                                <img src="<?=  $row->img_3_bar  ?>" alt="foto_rusak!" class="vertical_middle img-fluid"/>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product_img">
+                                                <img src="<?=  $row->img_4_bar  ?>" alt="foto_rusak!" class="vertical_middle img-fluid"/>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <div class="product_img">
-                                            <img src="<?php echo base_url('/inti/images/blue_jacket_img2.png'); ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
+                                    <div id="q_sync2" class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <div class="product_img">
+                                                <img src="<?=  $row->img_1_bar  ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="product_img">
-                                            <img src="<?php echo base_url('/inti/images/blue_jacket_img3.png'); ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
+                                        <div class="item">
+                                            <div class="product_img">
+                                                <img src="<?=  $row->img_2_bar  ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="product_img">
-                                            <img src="<?php echo base_url('/inti/images/blue_jacket_img4.png'); ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
+                                        <div class="item">
+                                            <div class="product_img">
+                                                <img src="<?=  $row->img_3_bar  ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product_img">
+                                                <img src="<?=  $row->img_4_bar  ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="q_sync2" class="owl-carousel owl-theme">
-                                    <div class="item">
-                                        <div class="product_img">
-                                            <img src="<?php echo base_url('/inti/images/blue_jacket_img.png'); ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="product_img">
-                                            <img src="<?php echo base_url('/inti/images/blue_jacket_img2.png'); ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="product_img">
-                                            <img src="<?php echo base_url('/inti/images/blue_jacket_img3.png'); ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="product_img">
-                                            <img src="<?php echo base_url('/inti/images/blue_jacket_img4.png'); ?>" alt="blue_jacket_img" class="vertical_middle img-fluid"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="product_content">
-                                    <div class="product_title">
-                                        <span class="product_price title_h4"> Rp 430,000</span>
-                                        <span class="stock text-right">Barang tersedia</span>
-                                        <p class="sku_text">SKU: 01-2345678</p>
-                                        <div class="star"><img src="<?php echo base_url('/inti/images/star.png'); ?>"  class="img-fluid" alt="star" />(1 Review)</div>
-                                    </div>
-
-                                    <form>
-                                        <div class="product_variant">
-                                            <div class="form-group color_box">
-                                                <label class="title_h5 text-capitalize">Warna</label>
-                                                <div class="radio text-uppercase text-center">
-                                                    <input type="radio" name="color" id="color1" >
-                                                    <label for="color1" class="color1"></label>
-                                                </div>
-                                                <div class="radio text-uppercase text-center">
-                                                    <input type="radio" name="color" id="color2" >
-                                                    <label for="color2" class="color2"></label>
-                                                </div>
-                                                <div class="radio text-uppercase text-center">
-                                                    <input type="radio" name="color" id="color3" >
-                                                    <label for="color3" class="color3"></label>
-                                                </div>
-                                                <div class="radio text-uppercase text-center">
-                                                    <input type="radio" name="color" id="color4" >
-                                                    <label for="color4" class="color4"></label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group size_box">
-                                                <label class="title_h5 text-capitalize">Ukuran</label>
-                                                <select class="form-control">
-                                                    <option>XS</option>
-                                                    <option>S</option>
-                                                    <option>M</option>
-                                                    <option>L</option>
-                                                    <option>XL</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group quantity_box">
-                                                <label class="title_h5 text-capitalize">Jumlah barang</label>
-                                                <div class="qty_number" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><input type="text" value="1" ></div>
-                                            </div>
-                                        </div>
-                                        <div class="product_btns">
-                                            <a href="<?php echo site_url('Home/wishlist'); ?>" class="wishlist_btn border-btn text-uppercase">Beli nanti </a>
-                                            <a href="<?php echo site_url('Produk/cart'); ?>" class="background-btn text-uppercase cart_btn">Beli</a>
-                                            <!-- <button type="submit" class="background-btn text-uppercase cart_btn">Beli</button> -->
-                                            <div class="product_share">
-                                                <p>Bagikan</p>
-                                                <ul class="social_icons">
-                                                    <li class="text-center"><a href="javascript:void(0);"><i class="flaticon-facebook vertical_middle"></i></a></li>
-                                                    <li class="text-center"><a href="javascript:void(0);"><i class="flaticon-pinterest vertical_middle"></i></a></li>
-                                                    <li class="text-center"><a href="javascript:void(0);"><i class="flaticon-instagram-logo vertical_middle"></i></a></li>
-                                                </ul>
-                                            </div>
+                                <div class="col-lg-6">
+                                    <div class="product_content">
+                                        <div class="product_title">
+                                            <span class="product_price title_h4">      
+                                                <?php echo "Rp ".number_format($row->harga_bar, 0,",","."); ?>                                            
+                                            </span>
+                                            <span class="stock text-right"><?=  $row->nama_bar  ?></span>
+                                            <p class="sku_text">SKU: <?=  $row->sku_bar  ?></p>
                                         </div>
                                         <div class="info_text">
-                                            <a href="<?php echo site_url('Home/detail_barang'); ?>">Detil lengkap</a>
+                                            <a href="<?php echo site_url('Home/detail_barang/'.$row->id_bar); ?>">Detil lengkap</a>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <?php endforeach; ?>
         <!-- END Lihat Popup Section  -->
         <!-- START Footer -->
         <footer class="wow fadeIn animated">

@@ -64,11 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </div>
                                         <div class="layer-filter">
                                             <ul>
-                                                <!-- <?php foreach ($kategori as $row) : ?>
-                                                    <li><a href="javascript:void(0);"> <?=  $row->kategori_bar  ?></a></li>
-                                                <?php endforeach; ?> -->
-
-                                                <?php foreach ($kategori as $row ) : ?>
+                                                <?php foreach ($starts1 as $row ) : ?>
                                                     <li><a><?=  anchor('Produk/showme/'.$row->kategori_bar,$row->kategori_bar,['class'=>'btn btn-default']) ?></a></li>
                                                 <?php endforeach; ?>
                                             </ul>
@@ -130,7 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!-- START Collection Sorting-->
                             <!-- START Products -->
                             <ul class=" category-products  wow fadeIn row">
-                                <?php foreach ($barang as $row) : ?>
+                                <?php foreach ($comes as $row) : ?>
                                     <li class="col-lg-3 col-md-4 col-6 column3 product  wow fadeInLeft animated" data-wow-duration="1300ms" >
                                     <div class="featured_content">
                                         <div class="featured_img_content">
@@ -150,13 +146,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <?php endforeach; ?>
                             </ul>
                             <!-- END Products -->
-                            <!-- START Products Pagination -->
-                            <div class="align-self-center" style="background-color: white;">
-                                <ul class="pagination text-center justify-content-center">
-                                    <li class="page-item"><?php echo $links; ?></li>
-                                </ul>
-                            </div>
-                            <!-- END Products Pagination -->
                         </div>
                     </div>
                 </div>
