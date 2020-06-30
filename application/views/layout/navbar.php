@@ -15,43 +15,6 @@
                 </li>
                 <li class="nav-item dropdown mega-dropdown">
                     <a class="nav-link text-uppercase dropdown-toggle" style="color: #f0d400;" href="<?php echo site_url('Produk'); ?>">Produk</a>
-                    <span class="menu_arrow flaticon-down-arrow-1"></span>
-                    <ul class="dropdown-menu megamenu_full_screen">
-                        <li class="w-100 text-capitalize">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <ul>
-                                            <li class="title_h5 w-100">Produk</li>
-                                            <li class="w-100"><a href="javascript:void(0);">Seragam</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">Senjata</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">Atribut</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">Aksesoris</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <ul>
-                                            <li class="title_h5 w-100">Kategori-1</li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <ul>
-                                            <li class="title_h5 w-100">Kategori-2</li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                            <li class="w-100"><a href="javascript:void(0);">hayo isi apa</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </li>
                 <li class="nav-item dropdown mega-dropdown">
                     <a class="nav-link text-uppercase" style="color: #f0d400;" href="<?php echo site_url('Blog/list'); ?>">Blog</a>

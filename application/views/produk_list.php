@@ -151,7 +151,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </ul>
                             <!-- END Products -->
                             <!-- START Products Pagination -->
-                            <div class="align-self-center" style="background-color: white;">
+                            <div class="align-self-center">
                                 <ul class="pagination text-center justify-content-center">
                                     <li class="page-item"><?php echo $links; ?></li>
                                 </ul>

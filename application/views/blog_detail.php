@@ -41,10 +41,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item text-capitalize"><a href="<?php echo site_url('Home'); ?>">Beranda</a> <i class="flaticon-arrows-4"></i></li>
                             <li class="breadcrumb-item text-capitalize"><a href="<?php echo site_url('Blog/list'); ?>">Blog</a> <i class="flaticon-arrows-4"></i></li>
-                            <li class="breadcrumb-item active text-capitalize">Judul Blog</li>
+                            <li class="breadcrumb-item active text-capitalize"><?php echo $lol['judul_blog']; ?></li>
                         </ol>
                     </nav>
-                    <h1 class="title_h1 font-weight-normal">Judul Blog</h1>
+                    <h1 class="title_h1 font-weight-normal"><?php echo $lol['judul_blog']; ?></h1>
                 </div>
             </section>
             <!-- END Breadcrumb   -->
@@ -56,11 +56,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-md-8 col-xl-9 wow fadeInLeft" data-wow-duration="1300ms">
                                 <div class="blog_content">
                                     <!-- Blog Description  -->
-                                    <img src="<?php echo base_url('/inti/images/bloglist2_1.png'); ?>" alt="bloglist2" class="img-fluid">
-                                    <span class="article__date">Mei 24, 2020 | Posted By Admin<span class="diamond_shape"></span></span>
-                                    <p>Bapa Kau setia, Bapa Kau mulia Tenanglah, jiwaku aman bersamaMu Lebih dari harta, Kaulah segalanya Tenanglah, jiwaku dalam hadiratMu Kau tunjukkan kasih setiaMu Kau menyediakan yang 'ku perlu Kau setia, Kau mulia Dulu, sekarang, dan selamanya Kau tunjukkan kasih setiaMu Kau menyediakan yang 'ku perlu Kau setia, Kau mulia Bapa Kau setia Lebih dari harta, Kaulah segalanya Tenanglah, jiwaku dalam hadiratMu</p>
-                                    <p>Tunjukkan kasih setiaMu Kau menyediakan yang 'ku perlu Kau setia, Kau mulia Dulu, sekarang, dan selamanya Tunjukkan kasih setiaMu Kau menyediakan yang 'ku perlu Kau setia, Kau mulia Bapa Kau setia Karna kasih setiaMu kami ada sampai saat ini, Tuhan Karna kasih setiaMu lebih dari hidup Maka bibir kami memuji, menyembahMu selamanya, Tuhan Kau</p>
-                                    <p>tunjukkan kasih setiaMu Kau menyediakan yang 'ku perlu Kau setia, Kau mulia Dulu, sekarang, dan selamanya Kau tunjukkan kasih setiaMu Kau menyediakan yang 'ku perlu Kau setia, Kau mulia Bapa Kau setia Kau setia, Kau mulia Kau setia, Kau mulia Kau setia, Kau mulia Bapa Kau setia.</p>
+                                    <img src="<?php echo $lol['img_1_blog']; ?>" alt="bloglist2" class="img-fluid">
+                                    <span class="article__date"><?php echo $lol['tanggal_blog']; ?> | Posted By <?php echo $lol['nama_admin_blog']; ?><span class="diamond_shape"></span></span>
+                                    <?php echo $lol['deskripsi_blog']; ?>
                                     <ul class="social_icons">
                                         <li class="text-center"><a href="javascript:void(0);"><i class="flaticon-facebook vertical_middle"></i></a></li>
                                         <li class="text-center"><a href="javascript:void(0);"><i class="flaticon-pinterest vertical_middle"></i></a></li>
@@ -136,34 +134,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <!-- Blog Featured Post -->
                                 <div class="featured_posts">
                                     <h4 class="title_h4 text-capitalize">Pos Pilihan</h4>
-                                    <div class="featured_posts_content">
-                                        <div class="featured_posts_img"><img src="<?php echo base_url('/inti/images/post1.png'); ?>" alt="post" class="img-fluid vertical_middle"></div>
-                                        <div class="featured_posts_text">
-                                            <a href="javascript:void(0);"> <h5 class="title_h5">dfbzgsjtndtgnxxn</h5></a>
-                                            <p>March 21, 2020</p>
+                                    <?php foreach ($tanggal as $row) : ?>
+                                        <div class="featured_posts_content">
+                                            <div class="featured_posts_img"><img src="<?=  $row->img_1_blog  ?>" alt="post" class="img-fluid vertical_middle"></div>
+                                            <div class="featured_posts_text">
+                                                <a href="javascript:void(0);"> <h5 class="title_h5"><?=  $row->judul_blog  ?></h5></a>
+                                                <p><?=  $row->tanggal_blog  ?></p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php endforeach; ?>
+
                                     <div class="featured_posts_content">
-                                        <div class="featured_posts_img"><img src="<?php echo base_url('/inti/images/post2.png'); ?>" alt="post" class="img-fluid vertical_middle"></div>
-                                        <div class="featured_posts_text">
-                                            <a href="javascript:void(0);"> <h5 class="title_h5">shdvbksd uidvsbjvj sdjbdnkbl</h5></a>
-                                            <p>Mei 21, 2020</p>
-                                        </div>
+                                        <h2>Kategori</h2>
+                                        <?php foreach ($kategori as $row) : ?>
+                                           <li><a><?=  anchor('Blog/showme/'.$row->kategori_blog,$row->kategori_blog,['class'=>'btn btn-default']) ?></a></li><br>
+                                        <?php endforeach; ?>
                                     </div>
-                                    <div class="featured_posts_content">
-                                        <div class="featured_posts_img"> <img src="<?php echo base_url('/inti/images/post3.png'); ?>" alt="post" class="img-fluid vertical_middle"></div>
-                                        <div class="featured_posts_text">
-                                            <a href="javascript:void(0);">  <h5 class="title_h5">Ut enim ad  minima send</h5></a>
-                                            <p>March 29, 2020</p>
-                                        </div>
-                                    </div>
-                                    <div class="featured_posts_content">
-                                        <div class="featured_posts_img"> <img src="<?php echo base_url('/inti/images/post4.png'); ?>" alt="post" class="img-fluid vertical_middle"></div>
-                                        <div class="featured_posts_text">
-                                            <h5 class="title_h5">Quis nostrum ullam corporis</h5>
-                                            <p>Mei 1, 2020</p>
-                                        </div>
-                                    </div>
+
                                     <!-- Blog Post Instagram  -->
                                     <div class="blog_instagram">
                                         <h4 class="title_h4 text-capitalize">Instagram</h4>

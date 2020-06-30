@@ -48,7 +48,7 @@ class Model_blog extends CI_Model {
 		public function dis_products1()
 		{
 			$this->db->distinct();
-			$query = $this->db->query('SELECT DISTINCT kategori FROM blog');
+			$query = $this->db->query('SELECT DISTINCT kategori_blog FROM blog');
 			return $query->result();
 		}
 
@@ -62,9 +62,20 @@ class Model_blog extends CI_Model {
 	     	return $query->result();
     	}
 
+    	public function tanggal(){
+	        $query = $this->db->query("SELECT * FROM blog ORDER BY tanggal_blog DESC LIMIT 5");
+	     	return $query->result();
+    	}
+
     	public function record_count() {
         	return $this->db->count_all('blog');
     	}
+
+    	public function showme($kategori_blog)
+		{ 
+			$query = $this->db->get_where('blog', array('kategori_blog' => $kategori_blog));
+			return $query->result();
+		}
 
     	public function getAr($limit, $start) {
 	        $this->db->limit($limit, $start);
@@ -78,10 +89,5 @@ class Model_blog extends CI_Model {
 	        }
 	        return false;
 	    }
-
-    	public function side(){
-			$this->db->order_by('tanggal_blog','desc');
-			return $this->db->get('blog');
-    	}
 
 }

@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="blog_list_section wow fadeIn">
                     <div class="container">
                         <div class="row">
-                            <?php foreach ($blog as $row) : ?>
+                            <?php foreach ($comes as $row) : ?>
                                 <div class="col-md-6 wow fadeInLeft animated" data-wow-duration="1300ms">
                                     <div class="blog_content">
                                         <a href="<?php echo site_url('Blog/index/'.$row->id_blog); ?>"><img src="<?=  $row->img_1_blog  ?>" alt="blog" class="img-fluid"></a>
@@ -64,12 +64,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                 </div>
                             <?php endforeach; ?>
-                            <!-- Blog Pagination  -->
-                            <div class="col-md-12 align-self-center">
-                                <ul class="pagination text-center justify-content-center">
-                                    <li class="page-item"><?php echo $links; ?></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
