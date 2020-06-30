@@ -66,34 +66,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </ul>
                                     <!-- Blog Comment  -->
                                     <div class="blog_comment">
-                                        <h4 class="title_h4 text-capitalize">Komentar (2)</h4>
-                                        <div class="blog_comment_content">
-                                            <div class="blog_comment_img rounded-circle">
-                                                <img src="<?php echo base_url('/inti/images/account.png'); ?>" alt="bloglist2" class="img-fluid vertical_middle">
-                                            </div>
-                                            <div class="blog_comment_text">
-                                                <h5 class="title_h5 text-capitalize">Ammy G.</h5>
-                                                <span class="article__date"> Mei 24, 2020</span>
-                                                <p>Sok alim kamu.... </p>
-                                            </div>
-                                        </div>
-                                        <div class="blog_comment_content">
-                                            <div class="blog_comment_img rounded-circle">
-                                                <img src="<?php echo base_url('/inti/images/account.png'); ?>" alt="bloglist2" class="img-fluid vertical_middle">
-                                            </div>
-                                            <div class="blog_comment_text">
-                                                <h5 class="title_h5 text-capitalize">Naomi Gunadi.</h5>
-                                                <span class="article__date">Mei 24, 2020</span>
-                                                <p>Maaf ya ka itu lagu... yang sok alim siapa nih? kaka yaa? hahahahahaha</p>
-                                            </div>
-                                        </div>
+                                        <h4 class="title_h4 text-capitalize">Komentar</h4>
+
+                                            <?php echo $comments; ?>
 
                                     </div>
                                     <hr/>
                                     <!-- Blog Leave Comment  -->
                                     <div class="blog_leave_comment padding-bottom-60">
                                         <h4 class="title_h4">Tinggalkan Komentar</h4>
-                                        <form>
+                                        <!-- <form>
                                             <div class="row">
                                                 <div class="col-sm-5">
                                                     <div class="form-group">
@@ -115,18 +97,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 </div>
                                             </div>
                                             <button type="submit" class="btn background-btn text-uppercase">Kirim Komentar</button>
-                                        </form>
-                                    </div>
-                                    <!-- Blog Post Navigation  -->
-                                    <div class="blog_post_navigation text-capitalize">
-                                        <div class="row">
-                                            <div class="blog_post_prev col-6">
-                                                <a href="javascript:void(0);">Pos Lama</a>
-                                            </div>
-                                            <div class="blog_post_next col-6 text-right">
-                                                <a href="javascript:void(0);">Post Baru</a>
-                                            </div>
-                                        </div>
+                                        </form> -->
+                                        <a href="<?php echo site_url('nyoba/index/'.$lol['id_blog']); ?>" class="btn btn-success">Comment disini</a>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +110,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <div class="featured_posts_content">
                                             <div class="featured_posts_img"><img src="<?=  $row->img_1_blog  ?>" alt="post" class="img-fluid vertical_middle"></div>
                                             <div class="featured_posts_text">
-                                                <a href="javascript:void(0);"> <h5 class="title_h5"><?=  $row->judul_blog  ?></h5></a>
+                                                <a href="<?php echo site_url('Blog/index/'.$row->id_blog); ?>"> <h5 class="title_h5"><?=  $row->judul_blog  ?></h5></a>
                                                 <p><?=  $row->tanggal_blog  ?></p>
                                             </div>
                                         </div>

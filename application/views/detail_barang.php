@@ -133,7 +133,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </div>
                                     </div>
                                     <div class="product_btns">
-                                        <a href="<?php echo site_url('Produk/cart'); ?>" class="background-btn text-uppercase cart_btn">beli sekarang</a>
+                                        <a href="#" class="background-btn text-uppercase cart_btn">beli sekarang</a>
+                                        <!-- # -->
                                         <div class="product_share">
                                             <p>Bagikan</p>
                                             <ul class="social_icons">
@@ -185,7 +186,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="featured_img_content">
                                         <img src="<?php echo base_url('/inti/images/f_product1.png'); ?>" alt="f_product" class="img-fluid">
                                         <div class="featured_btn vertical_middle">
-                                            <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
+                                            <a href="#" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
                                             <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
                                         </div>
                                         <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
@@ -223,7 +224,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="featured_img_content">
                                         <img src="<?php echo base_url('/inti/images/f_product2.png'); ?>" alt="f_product" class="img-fluid">
                                         <div class="featured_btn vertical_middle">
-                                            <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
+                                            <a href="#" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
                                             <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
                                         </div>
                                         <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
@@ -253,7 +254,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="featured_img_content">
                                         <img src="<?php echo base_url('/inti/images/f_product3.png'); ?>" alt="f_product" class="img-fluid">
                                         <div class="featured_btn vertical_middle">
-                                            <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
+                                            <a href="#" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
                                             <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
                                         </div>
                                         <div class="product-label  text-uppercase  new-label ">new<span class="diamond_shape"></span></div>
@@ -276,7 +277,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="featured_img_content">
                                         <img src="<?php echo base_url('/inti/images/f_product2.png'); ?>" alt="f_product" class="img-fluid">
                                         <div class="featured_btn vertical_middle">
-                                            <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
+                                            <a href="#" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
                                             <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="#modalone">Lihat</a>
                                         </div>
                                         <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
@@ -407,7 +408,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </div>
                                         <div class="product_btns">
                                             <a href="<?php echo site_url('Home/wishlist'); ?>" class="wishlist_btn border-btn text-uppercase">Beli nanti </a>
-                                            <a href="<?php echo site_url('Produk/cart'); ?>" class="background-btn text-uppercase cart_btn">Beli</a>
+                                            <a href="#" class="background-btn text-uppercase cart_btn">Beli</a>
                                             <!-- <button type="submit" class="background-btn text-uppercase cart_btn">Beli</button> -->
                                             <div class="product_share">
                                                 <p>Bagikan</p>

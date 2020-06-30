@@ -14,6 +14,7 @@ class Blog extends CI_Controller
         parent::__construct();
         $this->load->model('model_blog');
         $this->load->library('pagination');
+        $this->load->model('comment_model');
     }
     public function index($id) {
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
@@ -21,9 +22,43 @@ class Blog extends CI_Controller
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['navbar'] = $this->load->view('layout/navbar.php', NULL, TRUE);
         $data['lol'] = $this->model_blog->nyoba($id);
+        $data['comments'] = $this->show_tree($id);
         $data['kategori'] = $this->model_blog->dis_products1();
         $data['tanggal'] = $this->model_blog->tanggal();
         $this->load->view('blog_detail', $data);
+    }
+
+    function show_tree($id)
+    {
+        $store_all_id = array();
+        $id_result = $this->comment_model->tree_all($id);
+        if($id_result == NULL){
+            return "<h3>Belum ada Komen nih :( <br>Komen dong kk!</h3><br><br>";
+        }
+        else{
+            foreach ($id_result as $id_com) {
+                array_push($store_all_id, $id_com['parent_id']);
+            }
+            return  $this->in_parent(0,$id, $store_all_id);
+        }
+    }
+
+    function in_parent($in_parent,$id,$store_all_id) {
+        $html = "";
+        if (in_array($in_parent,$store_all_id)) {
+            $result = $this->comment_model->tree_by_parent($id,$in_parent);
+            $html .=  $in_parent == 0 ? "<div class='blog_comment_content'>" : "<div class='blog_comment_content'>";
+            foreach ($result as $re) {
+                $html .= " <div class='blog_comment_text'>
+                <h5 class='title_h5 text-capitalize'>".$re['comment_email']."   ->   ".$re['comment_name']."</h5>
+                <span class='article__date'>".date("F j, Y", $re['comment_created'])."</span>
+                <p>".$re['comment_body']."</p>";
+                $html .=$this->in_parent($re['id_com'],$id, $store_all_id);
+                $html .= "</div>";
+            }
+            $html .=  "</div>";
+        }
+        return $html;
     }
 
     public function list() {

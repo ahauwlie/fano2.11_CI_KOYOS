@@ -19,50 +19,11 @@
                 <li class="nav-item dropdown mega-dropdown">
                     <a class="nav-link text-uppercase" style="color: #f0d400;" href="<?php echo site_url('Blog/list'); ?>">Blog</a>
                 </li>
-                <li class="nav-item dropdown mega-dropdown">
-                    <a class="nav-link text-uppercase  dropdown-toggle" style="color: #f0d400;" href="javascript:void(0);">Lainnya</a>
-                    <span class="menu_arrow flaticon-down-arrow-1"></span>
-                    <ul class="dropdown-menu mega-dropdown-menu">
-                        <li class="w-100"><a href="#">hayo isi apa</a></li>
-                        <li class="w-100"><a href="#">hayo isi apa</a></li>
-                        <li class="w-100"><a href="#">hayo isi apa</a></li>
-                        <li class="w-100"><a href="#">hayo isi apa</a></li>
-                        <li class="w-100"><a href="#">hayo isi apa</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </nav>
 </div>
 <!-- End Header Navigation-->
-<!-- Start Header Social Menu -->
-<div class="col_3 visible-lg d-none">
-    <ul class="social_icons float-md-right">
-        <!-- Social links -->
-        <li class="login_icon">
-            <a style="color: #f0d400;" href="<?php echo site_url('Login'); ?>"><i class="flaticon-social"></i></a>
-        </li>
-        <li class="wishlist_icon">
-            <a style="color: #f0d400;" href="<?php echo site_url('Home/wishlist'); ?>"><i class="flaticon-heart"></i></a>
-        </li>
-        <li class="search_icon">
-            <a style="color: #f0d400;" href="javascript:void(0);"><i class="flaticon-magnifying-glass"></i></a>
-            <div class="search_form">
-                <form>
-                    <input type="text"  placeholder="Cari Produk" class="text-capitalize" />
-                    <button type="submit" class="vertical_middle"><i class="flaticon-magnifying-glass"></i></button>
-                </form>
-            </div>
-        </li>
-        <li class="cart_icon">
-            <a style="color: #f0d400;" href="<?php echo site_url('Produk/cart'); ?>">
-            <i class="flaticon-shopping-bag"></i>
-            <span class="count text-white rounded-circle text-center">2 </span>
-            </a>
-        </li>
-    </ul>
-</div>
-<!-- End Header Social Menu -->
 <!-- Start Header Currency-->
 <div class="header_currency col_4 text-right visible-lg d-none">
     <a style="color: #f0d400;" href="<?php echo site_url('Home'); ?>">Bebas isi apa</a>

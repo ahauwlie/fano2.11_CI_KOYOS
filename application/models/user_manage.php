@@ -1,6 +1,6 @@
 <?php
 
-class user_manage extends CI_Model {
+class User_manage extends CI_Model {
 	
 		 public function getAll()
 	    {

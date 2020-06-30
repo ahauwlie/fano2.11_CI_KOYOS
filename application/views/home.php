@@ -255,7 +255,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="featured_img_content">
                                         <img src="<?=  $row->img_1_bar  ?>" alt="f_product" class="img-fluid"/>
                                         <div class="featured_btn vertical_middle">
-                                            <a href="<?php echo site_url('Produk/cart'); ?>" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
+                                            <a href="#" class="text-uppercase background-btn add_to_bag_btn">Beli</a>
                                             <a href="javascript:void(0);" class="text-uppercase border-btn popup_btn" data-modal="<?php echo '#modalone'.$row->id_bar ?>">Lihat</a>
                                         </div>
                                         <a href="javascript:void(0);" class="heart  rounded-circle text-center "><i class="flaticon-heart vertical_middle"></i></a>
