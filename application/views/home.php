@@ -279,12 +279,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <?php  foreach ($blog as $row) : ?>
                             <div class="col-md-6 wow fadeInLeft" data-wow-duration="1300ms" >
                                 <div class="blog_content">
-                                    <a href="<?php echo site_url('Blog'); ?>"><img src="<?=  $row->img_1_blog  ?>" alt="blog" class="img-fluid"></a>
+                                    <a href="<?php echo site_url('Blog/index/'.$row->id_blog); ?>"><img src="<?=  $row->img_1_blog  ?>" alt="blog" class="img-fluid"></a>
                                     <span class="article__date">
                                         <?=  $row->tanggal_blog  ?> | Posted By <?=  $row->nama_admin_blog  ?>
                                         <span class="diamond_shape"></span>
                                     </span>
-                                    <a href="<?php echo site_url('Blog'); ?>">
+                                    <a href="<?php echo site_url('Blog/index/'.$row->id_blog); ?>">
                                         <h5  class="article__title title_h5"><?=  $row->judul_blog  ?></h5>
                                     </a>
                                     <p class="des"><?=  $row->mini_text_blog  ?></p>
